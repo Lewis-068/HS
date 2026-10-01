@@ -30,4 +30,3 @@ def show_main_page():
 
 if session_state == 'main':
   show_main_page()
-elif session_state == 

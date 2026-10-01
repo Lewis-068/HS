@@ -7,7 +7,7 @@ if 'email' not in st.session_state:
 
 
 def show_main_page():
-  st.title("**[공지사항]** 34기 학술 자료 사이트_HS입니다.")
+  st.info("**[공지사항]** 34기 학술 자료 사이트_HS입니다.")
 
   tab1, tab2, tab3, tab4, tab5 = st.tabs(['수학','물리','화학','생명','지구'])
 

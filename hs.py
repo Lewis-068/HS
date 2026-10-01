@@ -28,5 +28,5 @@ def show_main_page():
 
 
 
-if session_state == 'main':
+if st.session_state['page'] == 'main':
   show_main_page()

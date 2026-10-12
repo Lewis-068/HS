@@ -59,7 +59,7 @@ def save_suggestion_to_db(content):
 def show_suggest_page():
 
   st.title("**익명 건의함**")
-  form_url = https://docs.google.com/forms/d/e/1FAIpQLScF0MI3NHn3m5OjOc2kEqYym0QDoOl_mscj1Hj4SVJkGDPjYg/viewform??embedded=true
+  form_url = "https://docs.google.com/forms/d/e/1FAIpQLScF0MI3NHn3m5OjOc2kEqYym0QDoOl_mscj1Hj4SVJkGDPjYg/viewform??embedded=true"
   st.components.v1.iframe(form_url, height=700, scrolling=True)
   '''
   content = st.text_area("건의 내용 작성", height=300)

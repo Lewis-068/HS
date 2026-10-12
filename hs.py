@@ -49,7 +49,40 @@ def show_main_page():
 
   with col_left:
     st.link_button("이메일 수신 동의/미동의", "https://forms.gle/J9uYuXPvH9tFnCAY9")
+
+  with col_right:
+    st.session_state['page'] = 'suggest'
+
+def save_suggestion_to_db(content):
+  
+
+def show_suggest_page():
+
+  st.title("**익명 건의함**")
+  form_url = https://docs.google.com/forms/d/e/1FAIpQLScF0MI3NHn3m5OjOc2kEqYym0QDoOl_mscj1Hj4SVJkGDPjYg/viewform??embedded=true
+  st.components.v1.iframe(form_url, height=700, scrolling=True)
+  '''
+  content = st.text_area("건의 내용 작성", height=300)
+    
+  col1, col2 = st.columns(2)
+  with col1:
+    if st.button("제출하기"):
+      if content.strip():
+        save_suggestion_to_db(content)
+        st.success("건의사항이 제출되었습니다. 감사합니다")
+        st.session_state['page'] = 'main'
+        st.rerun()
+      else:
+        st.warning("내용이 입력되지 않았습니다.")
+  '''
+  
+  with col2:
+    if st.button("취소 / 메인으로"):
+      st.session_state['page'] = 'main'
+      st.rerun()
     
 
 if st.session_state['page'] == 'main':
     show_main_page()
+if st.session_state['page'] == 'suggest':
+    show_suggest_page()

@@ -9,10 +9,10 @@ if 'email' not in st.session_state:
 def show_main_page():
 
   title, drive = st.columns[4,1]
-    with title:  
-      st.title("**34기 학술 자료 사이트_HS**")
-    with drive:
-      st.link_button("공유 드라이브","https://drive.google.com/drive/folders/0AGBBqhm2jLp4Uk9PVA?hl=ko")
+  with title:  
+    st.title("**34기 학술 자료 사이트_HS**")
+  with drive:
+    st.link_button("공유 드라이브","https://drive.google.com/drive/folders/0AGBBqhm2jLp4Uk9PVA?hl=ko")
   
   tab1, tab2, tab3, tab4, tab5 = st.tabs(['수학','물리','화학','생명','지구'])
   

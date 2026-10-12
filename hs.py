@@ -28,8 +28,9 @@ def show_main_page():
   with tab5:
     st.link_button("지구과학 정리", "https://docs.google.com/document/d/1YOST6DnB_4Dr_jXNPWYKQ8C2EXSWMlUK6Q9_FuhP0Gk/edit?usp=sharing")
 
-
-
+  with col_left:
+    st.link_button("이메일 수신 동의/미동의", "https://forms.gle/J9uYuXPvH9tFnCAY9")
+    
 
 if st.session_state['page'] == 'main':
     show_main_page()

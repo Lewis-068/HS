@@ -53,9 +53,6 @@ def show_main_page():
   with col_right:
     st.session_state['page'] = 'suggest'
 
-def save_suggestion_to_db(content):
-  
-
 def show_suggest_page():
 
   st.title("**익명 건의함**")

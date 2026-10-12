@@ -57,8 +57,8 @@ def show_main_page():
 def show_suggest_page():
 
   st.title("**34기 학술 자료 사이트_HS**")
-  form_url = "https://docs.google.com/forms/d/e/1FAIpQLScF0MI3NHn3m5OjOc2kEqYym0QDoOl_mscj1Hj4SVJkGDPjYg/viewform?usp=header?embedded=true"
-  st.components.v1.iframe(form_url, height=700, scrolling=True)
+  form_url = "https://docs.google.com/forms/d/e/1FAIpQLScF0MI3NHn3m5OjOc2kEqYym0QDoOl_mscj1Hj4SVJkGDPjYg/viewform?embedded=true"
+  st.components.v1.iframe(form_url, height=400, scrolling=True)
   
   
   if st.button("돌아가기"):

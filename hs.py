@@ -51,7 +51,7 @@ def show_main_page():
     st.link_button("이메일 수신 동의/미동의", "https://forms.gle/J9uYuXPvH9tFnCAY9")
 
   with col_right:
-    if button("익명 건의함"):
+    if st.button("익명 건의함"):
       st.session_state['page'] = 'suggest'
 
 def show_suggest_page():

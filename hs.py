@@ -8,7 +8,7 @@ if 'email' not in st.session_state:
 
 def show_main_page():
 
-  title, drive = st.columns[4,1]
+  title, drive = st.columns([4,1])
   with title:  
     st.title("**34기 학술 자료 사이트_HS**")
   with drive:

@@ -48,7 +48,7 @@ def show_main_page():
       st.link_button("지구과학 정리_HS", "https://docs.google.com/document/d/1YOST6DnB_4Dr_jXNPWYKQ8C2EXSWMlUK6Q9_FuhP0Gk/edit?usp=sharing", use_container_width=True)
 
   with col_left:
-    st.link_button("이메일 수신 동의/미동의", "https://forms.gle/J9uYuXPvH9tFnCAY9")
+    st.link_button("이메일 수신 동의/미동의", "https://docs.google.com/forms/d/e/1FAIpQLScJCCfpfFsHKUqPGoQ0PcNHRv3RysKb8nrVF4jmamunX3fHOA/viewform?usp=publish-editor")
 
   with col_right:
     if st.button("익명 건의함"):

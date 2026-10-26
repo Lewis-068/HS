@@ -57,15 +57,15 @@ def show_main_page():
   taba,tabb,tabc = st.tabs(['1반 수행평가','2반 수행평가','3반 수행평가'])
 
   with taba:
-    with st.expander('대수 | 삼각함수 문제 만들기(11/01 1교시)')
-    with st.expander('대수 | 50개 증명(날짜 미정)')
-    with st.expander('전자기와 양자 | science snack project (진행중)')
-    with st.expander('화학 반응의 세계 | 산 염기 중화 적정(16번~21번)')
+    with st.expander('대수 | 삼각함수 문제 만들기(11/01 1교시)'):
+    with st.expander('대수 | 50개 증명(날짜 미정)'):
+    with st.expander('전자기와 양자 | science snack project (진행중)'):
+    with st.expander('화학 반응의 세계 | 산 염기 중화 적정(16번~21번)'):
     with st.expander('화학 반응의 세계 | 탄소 화합물 구조 제안서(날짜 미정)'):
       st.write("어떤 문제에 도움이 되는 탄소 화합물 구조를 만들어 제안서를 작성함. 논문 자료를 종합한 후, AI에게 '이러한 문제를 해결할 수 있는 탄소화합물을 설계해줘' 식의 프롬포트 작성. 사전 논문을 얼마나 때려박냐에 따라 정확도, 가치 달라짐")
-    with st.expander('생물의 유전 | 질문 노트(진행중 - 4회차)')
-    with st.expander('생물의 유전 | 모의활동을 통한 유전 원리 분석과 추론(10/29 3교시)')
-    with st.expander('행성우주과학 | 주계열 맞추기(날짜미정)')
+    with st.expander('생물의 유전 | 질문 노트(진행중 - 4회차)'):
+    with st.expander('생물의 유전 | 모의활동을 통한 유전 원리 분석과 추론(10/29 3교시)'):
+    with st.expander('행성우주과학 | 주계열 맞추기(날짜미정)'):
 
 def show_suggest_page():
 

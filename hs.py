@@ -73,6 +73,12 @@ def show_main_page():
       st.caption('내용: 가계도를 랜덤으로 생성하여 해석하고, 자손의 유전자형 및 표현형이 나타날 확률을 계산. \n대장균의 젖당 오페론에서 랜덤으로 돌연변이를 생성하고, 그에 따른 전사 가능 여부를 추론.')
     with st.expander('행성우주과학 | 주계열 맞추기(날짜미정)'):
       st.caption('세부 내용 확인중..')
+    with st.expander('공톡국어2 | 구술평가(날짜미정)'):
+      st.caption('시집 읽고 토의하기의 연장선. 10개 문항 중 2개의 문항을 랜덤으로 뽑아 60s~90s 답변.')
+    with st.expander('통합사회2 | 인권과 정의의 관점에서 사회 문제 해결하기(진행중)'):
+      st.caption('제출 마감 기한: 10월 26일(월)')
+    with st.expander('공통영어2 | 말하기(날짜미정)'):
+      st.caption('세부 내용 확인중..')
 
 def show_suggest_page():
 

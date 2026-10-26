@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title="34기 학술 자료 사이트_HS")
+
 if 'page' not in st.session_state:
   st.session_state['page'] = 'main'
 if 'email' not in st.session_state:

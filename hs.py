@@ -57,7 +57,7 @@ def show_main_page():
   taba,tabb,tabc = st.tabs(['1반 수행평가','2반 수행평가','3반 수행평가'])
 
   with taba:
-    with st.expander('대수 | 삼각함수 문제 만들기(11/01 1교시)'):
+    with st.expander('대수 | 삼각함수 문제 만들기(11/02 1교시)'):
       st.caption('범위는 정석 7장 ~ 12장')
     with st.expander('대수 | 50개 증명(날짜 미정)'):
       st.caption('문항 사전 공지 예정')

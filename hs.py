@@ -57,7 +57,8 @@ def show_main_page():
   taba,tabb,tabc = st.tabs(['1반 수행평가','2반 수행평가','3반 수행평가'])
 
   with taba:
-    st.write('대수 | 삼각함수 문제 만들기(11/01 1교시) // 증명 50개')
+    st.write('대수 | 삼각함수 문제 만들기(11/01 1교시)')
+    st.write('대수 | 삼각함수 문제 만들기(11/01 1교시)')
 
 def show_suggest_page():
 

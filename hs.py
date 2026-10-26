@@ -99,8 +99,6 @@ def show_main_page():
       st.caption('시집 읽고 토의하기의 연장선. 10개 문항 중 2개의 문항을 랜덤으로 뽑아 60s~90s 답변.')
     with st.expander('통합사회2 | 인권과 정의의 관점에서 사회 문제 해결하기(진행중)'):
       st.caption('제출 마감 기한: 10월 26일(월)')
-    with st.expander('공통영어2 | 서술형 평가(날짜미정)'):
-      st.caption('주어진 지문에 대해 key information 표 작성. 이후 분사 구문 / 접속사 / 관계대명사 사용하여 요약문 작성')
     with st.expander('공통영어2 | 말하기(날짜미정)'):
       st.caption('세부 내용 확인중..')
 

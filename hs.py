@@ -62,7 +62,7 @@ def show_main_page():
     with st.expander('대수 | 50개 증명(날짜 미정)'):
       st.write('문항 사전 공지 예정')
     with st.expander('전자기와 양자 | science snack project (진행중)'):
-      st.wrtie('현재 제작 단계')
+      st.write('현재 제작 단계')
     with st.expander('화학 반응의 세계 | 산 염기 중화 적정(날짜 미정)'):
       st.write('16번~21번')
     with st.expander('화학 반응의 세계 | 탄소 화합물 구조 제안서(날짜 미정)'):

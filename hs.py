@@ -75,7 +75,7 @@ def show_main_page():
       st.caption('세부 내용 확인중..')
     with st.expander('**공톡국어2** | 구술평가(날짜미정)'):
       st.caption('시집 읽고 토의하기의 연장선. 10개 문항 중 2개의 문항을 랜덤으로 뽑아 60s~90s 답변.')
-    with st.expander('**통합사회2** | 인권과 정의의 관점에서 사회 문제 해결하기(진행중)'):
+    with st.expander('**통합사회2** | 인권과 정의의 관점에서 사회 문제 해결하기(~10/26)'):
       st.caption('제출 마감 기한: 10월 26일(월)')
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('세부 내용 확인중..')
@@ -97,7 +97,7 @@ def show_main_page():
       st.caption('세부 내용 확인중..')
     with st.expander('**공톡국어2** | 구술평가(날짜미정)'):
       st.caption('시집 읽고 토의하기의 연장선. 10개 문항 중 2개의 문항을 랜덤으로 뽑아 60s~90s 답변.')
-    with st.expander('**통합사회2** | 인권과 정의의 관점에서 사회 문제 해결하기(진행중)'):
+    with st.expander('**통합사회2** | 인권과 정의의 관점에서 사회 문제 해결하기(~10/26)'):
       st.caption('제출 마감 기한: 10월 26일(월)')
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('세부 내용 확인중..')
@@ -119,7 +119,7 @@ def show_main_page():
       st.caption('세부 내용 확인중..')
     with st.expander('**공톡국어2** | 구술평가(날짜미정)'):
       st.caption('시집 읽고 토의하기의 연장선. 10개 문항 중 2개의 문항을 랜덤으로 뽑아 60s~90s 답변.')
-    with st.expander('**통합사회2** | 인권과 정의의 관점에서 사회 문제 해결하기(진행중)'):
+    with st.expander('**통합사회2** | 인권과 정의의 관점에서 사회 문제 해결하기(~10/26)'):
       st.caption('제출 마감 기한: 10월 26일(월)')
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('세부 내용 확인중..')

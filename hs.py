@@ -104,7 +104,7 @@ def show_main_page():
     with st.expander('공통영어2 | 말하기(날짜미정)'):
       st.caption('세부 내용 확인중..')
 
-with tabc:
+  with tabc:
     with st.expander('대수 | 삼각함수 문제 만들기(날짜 미정)'):
       st.caption('범위는 정석 7장 ~ 12장')
     with st.expander('대수 | 50개 증명(날짜 미정)'):

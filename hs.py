@@ -54,6 +54,11 @@ def show_main_page():
     if st.button("익명 건의함"):
       st.session_state['page'] = 'suggest'
 
+  taba,tabb,tabc = st.tabs(['1반','2반','3반'])
+
+  with taba:
+    st.write('대수 | 삼각함수 문제 만들기(11/01 1교시) // 증명 50개')
+
 def show_suggest_page():
 
   st.title("**34기 학술 자료 사이트_HS**")

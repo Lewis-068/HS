@@ -58,7 +58,7 @@ def show_main_page():
 
   with taba:
     st.write('대수 | 삼각함수 문제 만들기(11/01 1교시)')
-    st.write('대수 | 삼각함수 문제 만들기(11/01 1교시)')
+    st.write('대수 | 50개 증명(날짜 미정)')
 
 def show_suggest_page():
 

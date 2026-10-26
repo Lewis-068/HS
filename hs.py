@@ -59,6 +59,12 @@ def show_main_page():
   with taba:
     st.write('대수 | 삼각함수 문제 만들기(11/01 1교시)')
     st.write('대수 | 50개 증명(날짜 미정)')
+    st.write('전자기와 양자 | science snack project (진행중)')
+    st.write('화학 반응의 세계 | 산 염기 중화 적정(16번~21번)')
+    st.write('화학 반응의 세계 | 탄소 화합물 구조 제안서(날짜 미정)')
+    st.write('생물의 유전 | 질문 노트(진행중 - 4회차)')
+    st.write('생물의 유전 | 모의활동을 통한 유전 원리 분석과 추론(10/29 3교시)')
+    st.write('행성우주과학 | 성단, 은하 촬영(날짜미정)')
 
 def show_suggest_page():
 

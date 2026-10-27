@@ -65,8 +65,6 @@ def show_main_page():
       st.caption('문항 사전 공지 예정')
     with st.expander('**전자기와 양자** | science snack project (11/02~11/06)'):
       st.caption('제작 세 차시, 발표 두 차시.')
-    with st.expander('**화학 반응의 세계** | 산 염기 중화 적정(10/27 2교시)'):
-      st.caption('16번~21번')
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
       st.caption("어떤 문제에 도움이 되는 탄소 화합물 구조를 만들어 제안서를 작성함.  \n논문 자료를 종합한 후, AI에게 '이러한 문제를 해결할 수 있는 탄소화합물을 설계해줘' 식의 프롬포트 작성.  \n사전 논문을 얼마나 때려박냐에 따라 정확도, 가치 달라짐")
     with st.expander('**생물의 유전** | 질문 노트(진행중 - 4회차)'):
@@ -77,8 +75,6 @@ def show_main_page():
       st.caption('세부 내용 확인중..')
     with st.expander('**공톡국어2** | 구술평가(10/27 6교시)'):
       st.caption('시집 읽고 토의하기의 연장선. 10개 문항 중 2개의 문항을 랜덤으로 뽑아 60s~90s 답변.')
-    with st.expander('**통합사회2** | 인권과 정의의 관점에서 사회 문제 해결하기(~10/26)'):
-      st.caption('제출 마감 기한: 10월 26일(월)')
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('세부 내용 확인중..')
 
@@ -99,8 +95,6 @@ def show_main_page():
       st.caption('세부 내용 확인중..')
     with st.expander('**공톡국어2** | 구술평가(날짜미정)'):
       st.caption('시집 읽고 토의하기의 연장선. 10개 문항 중 2개의 문항을 랜덤으로 뽑아 60s~90s 답변.')
-    with st.expander('**통합사회2** | 인권과 정의의 관점에서 사회 문제 해결하기(~10/26)'):
-      st.caption('제출 마감 기한: 10월 26일(월)')
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('세부 내용 확인중..')
 
@@ -121,8 +115,6 @@ def show_main_page():
       st.caption('세부 내용 확인중..')
     with st.expander('**공톡국어2** | 구술평가(날짜미정)'):
       st.caption('시집 읽고 토의하기의 연장선. 10개 문항 중 2개의 문항을 랜덤으로 뽑아 60s~90s 답변.')
-    with st.expander('**통합사회2** | 인권과 정의의 관점에서 사회 문제 해결하기(~10/26)'):
-      st.caption('제출 마감 기한: 10월 26일(월)')
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('세부 내용 확인중..')
 

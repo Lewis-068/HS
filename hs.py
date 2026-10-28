@@ -61,8 +61,8 @@ def show_main_page():
   with taba:
     with st.expander('**대수** | 삼각함수 문제 만들기(11/02 1교시)'):
       st.caption('범위는 정석 7장 ~ 12장')
-    with st.expander('**대수** | 50개 증명(날짜 미정)'):
-      st.caption('문항 사전 공지 예정')
+    with st.expander('**대수** | 증명(11/23 1교시 예상)'):
+      st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽕아 증명.')
     with st.expander('**전자기와 양자** | science snack project (11/02~11/06)'):
       st.caption('제작 세 차시, 발표 두 차시.')
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
@@ -81,8 +81,8 @@ def show_main_page():
   with tabb:
     with st.expander('**대수** | 삼각함수 문제 만들기(날짜 미정)'):
       st.caption('범위는 정석 7장 ~ 12장')
-    with st.expander('**대수** | 50개 증명(날짜 미정)'):
-      st.caption('문항 사전 공지 예정')
+    with st.expander('**대수** | 증명(날짜 미정)'):
+      st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽕아 증명.')
     with st.expander('**전자기와 양자** | science snack project (11/02~11/06)'):
       st.caption('제작 세 차시, 발표 두 차시.')
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
@@ -101,8 +101,8 @@ def show_main_page():
   with tabc:
     with st.expander('**대수** | 삼각함수 문제 만들기(날짜 미정)'):
       st.caption('범위는 정석 7장 ~ 12장')
-    with st.expander('**대수** | 50개 증명(날짜 미정)'):
-      st.caption('문항 사전 공지 예정')
+    with st.expander('**대수** | 증명(날짜 미정)'):
+      st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽕아 증명.')
     with st.expander('**전자기와 양자** | science snack project (11/02~11/06)'):
       st.caption('제작 세 차시, 발표 두 차시.')
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):

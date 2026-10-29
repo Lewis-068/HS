@@ -74,7 +74,7 @@ def show_main_page():
     with st.expander('**행성우주과학** | 주계열 맞추기(11/03 화요일 4교시)'):
       st.caption('내용: C-M도를 직접 그림.  \n표준 주계열성의 데이터를 받은 후, 거리를 모르는 별의 실시 등급을 직접 찍어 거리를 구함.')
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
-      st.caption('제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
+      st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
   with tabb:
     with st.expander('**대수** | 삼각함수 문제 만들기(날짜 미정)'):
@@ -94,7 +94,7 @@ def show_main_page():
     with st.expander('**공톡국어2** | 구술평가(날짜미정)'):
       st.caption('시집 읽고 토의하기의 연장선. 10개 문항 중 2개의 문항을 랜덤으로 뽑아 60s~90s 답변.')
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
-      st.caption('제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
+      st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
   with tabc:
     with st.expander('**대수** | 삼각함수 문제 만들기(날짜 미정)'):
@@ -114,7 +114,7 @@ def show_main_page():
     with st.expander('**공톡국어2** | 구술평가(날짜미정)'):
       st.caption('시집 읽고 토의하기의 연장선. 10개 문항 중 2개의 문항을 랜덤으로 뽑아 60s~90s 답변.')
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
-      st.caption('제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
+      st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
 def show_suggest_page():
 

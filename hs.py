@@ -119,7 +119,7 @@ def show_main_page():
       st.session_state['page'] = 'developer'
       st.rerun()
     else:
-      st.warning("올바르지 않습니다.")
+      st.warning("코드가 올바르지 않습니다.")
 
 def show_suggest_page():
 

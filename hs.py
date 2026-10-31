@@ -118,9 +118,8 @@ def show_main_page():
     code = st.text_input("secret code: ")
     if st.button("코드 확인"):
       if code == "34studyLewis":
-        url = f"https://docs.google.com/spreadsheets/d/10Am-n7ydEK83sTMaaFWuY4b87KICdL9jqZvJwXbItvE/export?format=csv&gid=335439914"
-        df = pd.read_csv(url)
-        st.dataframe(df, use_container_width=True)
+        st.session_state['page'] = 'developer'
+        st.rerun()
       else:
         with output:
           st.warning("코드가 올바르지 않습니다.")
@@ -137,7 +136,7 @@ def show_suggest_page():
     st.rerun()
     
 def show_developer_space_page():
-  url = f"https://docs.google.com/spreadsheets/d/10Am-n7ydEK83sTMaaFWuY4b87KICdL9jqZvJwXbItvE/expert?format=csv&gid=335439914"
+  url = f"https://docs.google.com/spreadsheets/d/10Am-n7ydEK83sTMaaFWuY4b87KICdL9jqZvJwXbItvE/export?format=csv&gid=335439914"
   df = pd.read_csv(url)
   st.dataframe(df, use_container_width=True)
   

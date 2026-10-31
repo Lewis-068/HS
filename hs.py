@@ -113,9 +113,10 @@ def show_main_page():
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
-  input, output, _ = st.columns([2,6,3])
-  with input:
+  text, input, output, _ = st.columns([2,2,5,2])
+  with text:
     code = st.text_input("secret code: ")
+  with input:
     if st.button("코드 확인"):
       if code == "34studyLeiws":
         st.session_state['page'] = 'developer'
@@ -139,6 +140,10 @@ def show_developer_space_page():
   url = f"https://docs.google.com/spreadsheets/d/10Am-n7ydEK83sTMaaFWuY4b87KICdL9jqZvJwXbItvE/expert?format=csv&gid=335439914"
   df = pd.read_csv(url)
   st.dataframe(df, use_container_width=True)
+  
+  if st.button("돌아가기"):
+    st.session_state['page'] = 'main'
+    st.rerun()
 
 if st.session_state['page'] == 'main':
     show_main_page()

@@ -113,10 +113,9 @@ def show_main_page():
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
-  text, input, output, _ = st.columns([2,2,5,2])
+  text, output, _ = st.columns([2,6,3])
   with text:
     code = st.text_input("secret code: ")
-  with input:
     if st.button("코드 확인"):
       if code == "34studyLeiws":
         st.session_state['page'] = 'developer'

@@ -151,7 +151,7 @@ def show_developer_space_page():
   
   url = f"https://docs.google.com/spreadsheets/d/1noxPR0LvBGnHJ3Ka-MQbWoh5bVIx4D8mKLSLOjuKc2E/export?format=csv&gid=1596480109"
   df = pd.read_csv(url)
-  st.dataframe(df, 
+  st.dataframe(df.iloc[:, 1:], 
                use_container_width=True,
                hide_index=True,
                column_config={

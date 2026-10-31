@@ -117,7 +117,7 @@ def show_main_page():
   if st.button("코드 확인"):
     if code == "hangseong":
       st.session_state['page'] = 'developer'
-      st.rerun
+      st.rerun()
     else:
       st.warning("올바르지 않습니다.")
 

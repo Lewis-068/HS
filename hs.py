@@ -136,6 +136,9 @@ def show_suggest_page():
     st.rerun()
     
 def show_developer_space_page():
+
+  st.write("익명 건의함")
+  
   url = f"https://docs.google.com/spreadsheets/d/10Am-n7ydEK83sTMaaFWuY4b87KICdL9jqZvJwXbItvE/export?format=csv&gid=335439914"
   df = pd.read_csv(url)
   st.dataframe(df, use_container_width=True)

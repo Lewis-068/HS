@@ -135,7 +135,7 @@ def show_suggest_page():
 def show_developer_space():
   url = f"https://docs.google.com/spreadsheets/d/10Am-n7ydEK83sTMaaFWuY4b87KICdL9jqZvJwXbItvE/expert?format=csv&gid=335439914"
   df = pd.read_csv(url)
-    st.dataframe(df, use_container_width=True)
+  st.dataframe(df, use_container_width=True)
 
 if st.session_state['page'] == 'main':
     show_main_page()

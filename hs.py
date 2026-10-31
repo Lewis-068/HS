@@ -115,7 +115,7 @@ def show_main_page():
 
   code = st.text_input("secret code: ")
   if st.button("코드 확인"):
-    if code = "hangseong"
+    if code == "hangseong"
       st.session_state['page'] = 'developer'
       st.rerun
     else:

@@ -116,13 +116,13 @@ def show_main_page():
   input, output = st.culumns([1,1,4])
   with input:
     code = st.text_input("secret code: ")
-      if st.button("코드 확인"):
-        if code == "34studyLeiws":
-          st.session_state['page'] = 'developer'
-          st.rerun()
-        else:
-          with output:
-            st.warning("코드가 올바르지 않습니다.")
+    if st.button("코드 확인"):
+      if code == "34studyLeiws":
+        st.session_state['page'] = 'developer'
+        st.rerun()
+      else:
+        with output:
+          st.warning("코드가 올바르지 않습니다.")
 
 def show_suggest_page():
 

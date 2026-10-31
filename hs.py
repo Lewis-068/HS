@@ -77,7 +77,7 @@ def show_main_page():
       st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
   with tabb:
-    with st.expander('**대수** | 삼각함수 문제 만들기(날짜 미정)'):
+    with st.expander('**대수** | 삼각함수 문제 만들기(11/02 월요일 6교시)'):
       st.caption('범위는 정석 7장 ~ 12장')
     with st.expander('**대수** | 증명(날짜 미정)'):
       st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽑아 증명.')
@@ -95,7 +95,7 @@ def show_main_page():
       st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
   with tabc:
-    with st.expander('**대수** | 삼각함수 문제 만들기(날짜 미정)'):
+    with st.expander('**대수** | 삼각함수 문제 만들기(11/02 월요일 4교시)'):
       st.caption('범위는 정석 7장 ~ 12장')
     with st.expander('**대수** | 증명(날짜 미정)'):
       st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽑아 증명.')
@@ -109,8 +109,6 @@ def show_main_page():
       st.caption('마감: 미정  \n심화 탐구: 자료 찾고, PPT 정리까지 수업 시간 3시간. 발표는 4차시')
     with st.expander('**행성우주과학** | 주계열 맞추기(날짜미정)'):
       st.caption('내용: C-M도를 직접 그림.  \n표준 주계열성의 데이터를 받은 후, 거리를 모르는 별의 실시 등급을 직접 찍어 거리를 구함.')
-    with st.expander('**공톡국어2** | 구술평가(날짜미정)'):
-      st.caption('시집 읽고 토의하기의 연장선. 10개 문항 중 2개의 문항을 랜덤으로 뽑아 60s~90s 답변.')
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 

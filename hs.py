@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 st.set_page_config(page_title="34기 학술 자료 사이트_HS")
 
@@ -112,6 +113,14 @@ def show_main_page():
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
+  code = st.text_input("secret code: ")
+  if st.button("코드 확인"):
+    if code = "hangseong"
+      st.session_state['page'] = 'developer'
+      st.rerun
+    else:
+      st.warning("올바르지 않습니다.")
+
 def show_suggest_page():
 
   st.title("**34기 학술 자료 사이트_HS**")
@@ -123,8 +132,14 @@ def show_suggest_page():
     st.session_state['page'] = 'main'
     st.rerun()
     
+def show_developer_space():
+  url: https://docs.google.com/spreadsheets/d/10Am-n7ydEK83sTMaaFWuY4b87KICdL9jqZvJwXbItvE/expert?format=csv&gid=335439914
+  df = pd.read_csv(url)
+    st.dataframe(df, use_container_width=True)
 
 if st.session_state['page'] == 'main':
     show_main_page()
 elif st.session_state['page'] == 'suggest':
     show_suggest_page()
+elif st.session_state['page'] == 'developer':
+    show_developer_space_page()

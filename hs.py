@@ -141,7 +141,7 @@ def show_developer_space_page():
   
   url = f"https://docs.google.com/spreadsheets/d/10Am-n7ydEK83sTMaaFWuY4b87KICdL9jqZvJwXbItvE/export?format=csv&gid=335439914"
   df = pd.read_csv(url)
-  st.dataframe(df, use_container_width=True)
+  st.dataframe(df, use_container_width=True, height=600)
   
   if st.button("돌아가기"):
     st.session_state['page'] = 'main'

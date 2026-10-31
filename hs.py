@@ -146,6 +146,18 @@ def show_developer_space_page():
                  "건의 내용 작성": st.column_config.TextColumn("건의 내용 작성", width="large")
                }
               )
+
+  st.write("이메일 수신 동의")
+  
+  url = f"https://docs.google.com/spreadsheets/d/1noxPR0LvBGnHJ3Ka-MQbWoh5bVIx4D8mKLSLOjuKc2E/export?format=csv&gid=1596480109"
+  df = pd.read_csv(url)
+  st.dataframe(df, 
+               use_container_width=True,
+               hide_index=True,
+               column_config={
+                 "아메일 주소": st.column_config.TextColumn("이메일 주소", width="large")
+               }
+              )
   
   if st.button("돌아가기"):
     st.session_state['page'] = 'main'

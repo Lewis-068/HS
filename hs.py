@@ -135,6 +135,8 @@ def show_main_page():
         ]
         tmi = random.choice(tmi_list)
         st.toast(tmi)
+      elif code == None:
+        st.toast("코드를 입력해주세요.")
       else:
         st.toast("코드가 올바르지 않습니다.")
 

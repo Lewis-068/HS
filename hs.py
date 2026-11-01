@@ -120,7 +120,7 @@ def show_main_page():
       if code == "34studyLewis":
         st.session_state['page'] = 'developer'
         st.rerun()
-      elif code == "tmi" or code == "TMI":
+      elif code.lower() == "tmi":
         tmi_list = [
           "개발자 tmi: 개발자의 mbti는 INTP이다.",
           "개발자 tmi: 개발자의 최애 밴드는 실리카겔이고, 앨범 중 'POWER ANDRE 99'을 가장 많이 듣는다.",
@@ -135,7 +135,7 @@ def show_main_page():
         ]
         tmi = random.choice(tmi_list)
         st.toast(tmi)
-      elif code == None:
+      elif code == "":
         st.toast("코드를 입력해주세요.")
       else:
         st.toast("코드가 올바르지 않습니다.")

@@ -194,11 +194,13 @@ def show_developer_space_page():
                 )
   show_sheets()
 
-  st.button("새로고침")
-  
-  if st.button("돌아가기"):
-    st.session_state['page'] = 'main'
-    st.rerun()
+  eh, to = st.columns(2)
+  with to:
+    st.button("새로고침")
+  with eh:
+    if st.button("돌아가기"):
+      st.session_state['page'] = 'main'
+      st.rerun()
 
 if st.session_state['page'] == 'main':
     show_main_page()

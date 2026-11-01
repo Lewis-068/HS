@@ -22,7 +22,7 @@ def show_main_page():
   
   st.info("**[공지사항]** 유저 간 소통 페이지 제작 시도중입니다.")
   
-  col_left, col_right1, col_right2 = st.columns([2,1,1)
+  col_left, col_right1, col_right2 = st.columns([2,1,1])
 
   with tab1:
     with st.container(border=True, height=170):

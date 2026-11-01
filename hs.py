@@ -194,7 +194,7 @@ if st.session_state['page'] == 'main':
     show_main_page()
 elif st.session_state['page'] == 'suggest':
     show_suggest_page()
-elif st.session_statw['page'] == 'suggest_record':
+elif st.session_state['page'] == 'suggest_record':
     show_suggest_record_page()
 elif st.session_state['page'] == 'developer':
     show_developer_space_page()

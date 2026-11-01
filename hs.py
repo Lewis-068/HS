@@ -151,11 +151,14 @@ def show_suggest_page():
 
 def show_suggest_record_page():
   st.title("**34기 학술 자료 사이트_HS**")
-  tabr = st.tabs(['미완료 건의 내역'])
+  tabr, tabrr = st.tabs(['미완료 건의 내역', '검토중인 건의'])
   with tabr:
     st.write("미완료된 건의가 없습니다.")
-    st.write("모든 건의가 해결되었거나, 아직 확인되지 않았을 수 있습니다!")
-
+    st.caption("모든 건의가 해결되었거나, 아직 검토되지 않았을 수 있습니다!")
+  with tanrr:
+    st.write("검토중인 건의가 없습니다.")
+    st.caption("모든 건의가 검토되었거나, 아직 확인되지 않았을 수 있습니다.")
+  
   if st.button("돌아가기"):
     st.session_state['page'] = 'main'
     st.rerun

@@ -120,7 +120,7 @@ def show_main_page():
       if code == "34studyLewis":
         st.session_state['page'] = 'developer'
         st.rerun()
-      elif code == "tmi" or "TMI":
+      elif code == "tmi" or code == "TMI":
         tmi_list = [
           "개발자 tmi: 개발자의 mbti는 INTP이다.",
           "개발자 tmi: 개발자의 최애 밴드는 실리카겔이고, 앨범 중 'POWER ANDRE 99'을 가장 많이 듣는다.",

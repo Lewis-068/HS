@@ -20,9 +20,9 @@ def show_main_page():
   
   tab1, tab2, tab3, tab4, tab5 = st.tabs(['수학','물리','화학','생명','지구'])
   
-  st.info("**[공지사항]** 수학 필기 모음_HS 대수 증명 작성 중입니다.  \n1반, 2반, 3반 예정된 수행평가 일정 제보해주시면 감사하겠습니다.")
+  st.info("**[공지사항]** 유저 간 소통 페이지 제작 시도중입니다.")
   
-  col_left, col_right = st.columns(2)
+  col_left, col_right1, col_right2 = st.columns([2,1,1)
 
   with tab1:
     with st.container(border=True, height=170):
@@ -54,9 +54,12 @@ def show_main_page():
   with col_left:
     st.link_button("이메일 수신 동의/미동의", "https://docs.google.com/forms/d/e/1FAIpQLScJCCfpfFsHKUqPGoQ0PcNHRv3RysKb8nrVF4jmamunX3fHOA/viewform?usp=publish-editor")
 
-  with col_right:
+  with col_right1:
     if st.button("익명 건의함"):
       st.session_state['page'] = 'suggest'
+  with col_right2:
+    if st.button("건의 내역"):
+      st.session_state['page'] = 'suggest_record'
 
   taba,tabb,tabc = st.tabs(['1반 수행평가','2반 수행평가','3반 수행평가'])
 
@@ -145,6 +148,17 @@ def show_suggest_page():
   if st.button("돌아가기"):
     st.session_state['page'] = 'main'
     st.rerun()
+
+def show_suggest_record_page():
+  st.title("**34기 학술 자료 사이트_HS**")
+  tabr = st.tabs['미완료 건의 내역']
+  with tabr:
+    st.write("미완료된 건의가 없습니다.")
+    st.caption("모든 건의가 해결되었거나, 아직 확인되지 않았을 수 있습니다!")
+
+  if st.button("돌아가기"):
+    st.session_state['page'] = 'main'
+    st.rerun
     
 def show_developer_space_page():
 
@@ -180,5 +194,7 @@ if st.session_state['page'] == 'main':
     show_main_page()
 elif st.session_state['page'] == 'suggest':
     show_suggest_page()
+elif st.session_statw['page'] == 'suggest_record':
+    show_suggest_record_page()
 elif st.session_state['page'] == 'developer':
     show_developer_space_page()

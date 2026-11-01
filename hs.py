@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import random
 
 st.set_page_config(page_title="34기 학술 자료 사이트_HS")
 
@@ -120,7 +121,7 @@ def show_main_page():
         st.rerun()
       else:
         with output:
-          st.warning("코드가 올바르지 않습니다.")
+          st.toast("코드가 올바르지 않습니다.")
 
 def show_suggest_page():
 
@@ -137,7 +138,7 @@ def show_developer_space_page():
 
   st.write("익명 건의함")
   
-  url = f"https://docs.google.com/spreadsheets/d/10Am-n7ydEK83sTMaaFWuY4b87KICdL9jqZvJwXbItvE/export?format=csv&gid=335439914"
+  url = "https://docs.google.com/spreadsheets/d/10Am-n7ydEK83sTMaaFWuY4b87KICdL9jqZvJwXbItvE/export?format=csv&gid=335439914"
   df = pd.read_csv(url)
   st.dataframe(df, 
                use_container_width=True,
@@ -149,7 +150,7 @@ def show_developer_space_page():
 
   st.write("이메일 수신 동의")
   
-  url = f"https://docs.google.com/spreadsheets/d/1noxPR0LvBGnHJ3Ka-MQbWoh5bVIx4D8mKLSLOjuKc2E/export?format=csv&gid=1596480109"
+  url = "https://docs.google.com/spreadsheets/d/1noxPR0LvBGnHJ3Ka-MQbWoh5bVIx4D8mKLSLOjuKc2E/export?format=csv&gid=1596480109"
   df = pd.read_csv(url)
   st.dataframe(df.iloc[:, 1:], 
                use_container_width=True,

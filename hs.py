@@ -113,7 +113,7 @@ def show_main_page():
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
-  text, _ = st.columns([2, 9])
+  text, _, button = st.columns([2, 8, 1])
   with text:
     code = st.text_input("secret code: ")
     if st.button("코드 확인"):
@@ -139,6 +139,8 @@ def show_main_page():
         st.toast("코드를 입력해주세요.")
       else:
         st.toast("코드가 올바르지 않습니다.")
+  with button:
+    st.button("새로고침")
 
 def show_suggest_page():
 
@@ -160,10 +162,14 @@ def show_suggest_record_page():
   with tabrr:
     st.write("검토중인 건의가 없습니다.")
     st.caption("모든 건의가 검토되었거나, 아직 확인되지 않았을 수 있습니다!")
-  
-  if st.button("돌아가기"):
-    st.session_state['page'] = 'main'
-    st.rerun()
+
+  ehfdkrkrl, tofhrhcla = st.columns(2)
+  with ehfdkrkrl:
+    if st.button("돌아가기"):
+      st.session_state['page'] = 'main'
+      st.rerun()
+  with tofhrhcla:
+    st.button("새로고침")
     
 def show_developer_space_page():
   @st.fragment(run_every="30s")

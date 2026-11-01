@@ -118,7 +118,7 @@ def show_main_page():
     st.caption("삼각함수의 활용 학습지 끝자락에 있던 '삼각함수의 미분'과 arcsin은 미포함")
   with st.expander('**미적분1** | 미적분1 정석 전체? + 학습지')
     st.caption("중간 내용 포함이다 vs 8장(속도-가속도와 미분)부터다 << 알려주세요")
-  with st.expander('**전자기와 양자** | Chapter 34 빛의 본질과 광선 광학의 원리 ~ Chapter 41 원자 물리학 or Chapter 42 핵물리학)
+  with st.expander('**전자기와 양자** | Chapter 34 빛의 본질과 광선 광학의 원리 ~ Chapter 41 원자 물리학 or Chapter 42 핵물리학')
     st.caption("-")
   with st.expander('**화학 반응의 세계** | 11. 산화 환원 ~ 15. 유기화학3')
     st.caption("-")

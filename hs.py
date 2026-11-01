@@ -166,30 +166,35 @@ def show_suggest_record_page():
     st.rerun()
     
 def show_developer_space_page():
-
-  st.write("익명 건의함")
+  @st.fragment(run_every="30s")
+  def show_sheets():
   
-  url = "https://docs.google.com/spreadsheets/d/10Am-n7ydEK83sTMaaFWuY4b87KICdL9jqZvJwXbItvE/export?format=csv&gid=335439914"
-  df = pd.read_csv(url)
-  st.dataframe(df, 
-               use_container_width=True,
-               hide_index=True,
-               column_config={
-                 "건의 내용 작성": st.column_config.TextColumn("건의 내용 작성", width="large")
-               }
-              )
+    st.write("익명 건의함") 
 
-  st.write("이메일 수신 동의")
+    url = "https://docs.google.com/spreadsheets/d/10Am-n7ydEK83sTMaaFWuY4b87KICdL9jqZvJwXbItvE/export?format=csv&gid=335439914"
+    df = pd.read_csv(url)
+    st.dataframe(df, 
+                 use_container_width=True,
+                 hide_index=True,
+                 column_config={
+                   "건의 내용 작성": st.column_config.TextColumn("건의 내용 작성", width="large")
+                 }
+                )
+
+    st.write("이메일 수신 동의")
   
-  url = "https://docs.google.com/spreadsheets/d/1noxPR0LvBGnHJ3Ka-MQbWoh5bVIx4D8mKLSLOjuKc2E/export?format=csv&gid=1596480109"
-  df = pd.read_csv(url)
-  st.dataframe(df.iloc[:, 1:], 
-               use_container_width=True,
-               hide_index=True,
-               column_config={
-                 "아메일 주소": st.column_config.TextColumn("이메일 주소", width="large")
-               }
-              )
+    url = "https://docs.google.com/spreadsheets/d/1noxPR0LvBGnHJ3Ka-MQbWoh5bVIx4D8mKLSLOjuKc2E/export?format=csv&gid=1596480109"
+    df = pd.read_csv(url)
+    st.dataframe(df.iloc[:, 1:], 
+                 use_container_width=True,
+                 hide_index=True,
+                 column_config={
+                   "아메일 주소": st.column_config.TextColumn("이메일 주소", width="large")
+                 }
+                )
+  show_sheets()
+
+  st.button("새로고침")
   
   if st.button("돌아가기"):
     st.session_state['page'] = 'main'

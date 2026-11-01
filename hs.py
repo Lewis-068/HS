@@ -113,7 +113,7 @@ def show_main_page():
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
-  text, _, button = st.columns([2, 8, 1])
+  text, _, button = st.columns([2, 6, 3])
   with text:
     code = st.text_input("secret code: ")
     if st.button("코드 확인"):

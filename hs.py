@@ -110,13 +110,28 @@ def show_main_page():
     with st.expander('**공통영어2** | 말하기(날짜미정)'):
       st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
-  text, _ = st.columns([1, 4])
+  text, _ = st.columns([2, 9])
   with text:
     code = st.text_input("secret code: ")
     if st.button("코드 확인"):
       if code == "34studyLewis":
         st.session_state['page'] = 'developer'
         st.rerun()
+      elif code == "tmi" or "TMI":
+        tmi_list = [
+          "개발자 tmi: 개발자의 mbti는 INTP이다.",
+          "개발자 tmi: 개발자의 최애 밴드는 실리카겔이고, 앨범 중 'POWER ANDRE 99'을 가장 많이 듣는다.",
+          "개발자 tmi: 개발자가 과학을 좋아하게 된 계기는 초등학교 5학년 때 읽은 '내일은 실험왕'이다.",
+          "개발자 tmi: 개발자는 입학 전 타자가 250타였으나, 수업 중 필기로 인해 현재 400타까지 상승하였다.",
+          "개발자 tmi: 개발자의 고향은 구미이다.",
+          "개발자 tmi: 개발자는 10월 27일에 올라온 건의를 10월 31일에야 읽는 실수를 저지르고 곧바로 개발자 공간을 제작하였다.",
+          "개발자 tmi: 개발자의 롤 주챔은 아펠리오스이다.",
+          "개발자 tmi: 개발자의 고양이 이름은 '루이(Louis)'이고, 강아지 이름은 '봄이'이다.",
+          "개발자 tmi: 개발자의 중학교 시절 꿈은 '작가'였고, 아직도 가끔 글을 쓴다.",
+          "개발자 tmi: 개발자는 한창 친구들과 마크를 즐기던 시절에, 주로 커맨드로 콘텐츠를 제작하는 역할이었다."
+        ]
+        tmi = random.choice(tmi_list)
+        st.toast(tmi)
       else:
         st.toast("코드가 올바르지 않습니다.")
 

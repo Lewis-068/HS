@@ -22,7 +22,7 @@ def show_main_page():
   
   st.info("**[공지사항]** 유저 간 소통 페이지 제작 시도중입니다.")
   
-  col_left, col_right1, col_right2 = st.columns([2,1,1])
+  col_left, col_right1, col_right2 = st.columns([4,1,3])
 
   with tab1:
     with st.container(border=True, height=170):
@@ -151,7 +151,7 @@ def show_suggest_page():
 
 def show_suggest_record_page():
   st.title("**34기 학술 자료 사이트_HS**")
-  tabr = st.tabs['미완료 건의 내역']
+  tabr = st.tabs(['미완료 건의 내역'])
   with tabr:
     st.write("미완료된 건의가 없습니다.")
     st.caption("모든 건의가 해결되었거나, 아직 확인되지 않았을 수 있습니다!")

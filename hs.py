@@ -120,8 +120,7 @@ def show_main_page():
         st.session_state['page'] = 'developer'
         st.rerun()
       else:
-        with output:
-          st.toast("코드가 올바르지 않습니다.")
+        st.toast("코드가 올바르지 않습니다.")
 
 def show_suggest_page():
 

@@ -161,7 +161,7 @@ def show_suggest_record_page():
   
   if st.button("돌아가기"):
     st.session_state['page'] = 'main'
-    st.rerun
+    st.rerun()
     
 def show_developer_space_page():
 

@@ -325,18 +325,18 @@ def show_blackjack():
           st.session_state['player']['state'] = '스테이'
           st.rerun()
     if st.session_state['player']['state'] == '스테이':
-      st.session_state['dealer']['state'] = '히트'
-      st.session_state['dealer']['card'].remove('?')
-      st.session_state['dealer']['card'].append(random.choice(deck))
-      sumcard('dealer')
-      if st.session_state['dealer']['sum'] == 21:
-          st.session_state['dealer']['state'] = '블랙잭!'
-          st.session_state['player']['state'] = '패배'
-      while st.session_state['dealer']['sum'] < 17:
+        st.session_state['dealer']['state'] = '히트'
+        st.session_state['dealer']['card'].remove('?')
         st.session_state['dealer']['card'].append(random.choice(deck))
         sumcard('dealer')
-      judgement()
-      st.rerun
+        if st.session_state['dealer']['sum'] == 21:
+            st.session_state['dealer']['state'] = '블랙잭!'
+            st.session_state['player']['state'] = '패배'
+        while st.session_state['dealer']['sum'] < 17:
+          st.session_state['dealer']['card'].append(random.choice(deck))
+          sumcard('dealer')
+        judgement()
+        st.rerun()
     
 
   rerun, clear = st.columns(2)

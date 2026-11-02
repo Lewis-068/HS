@@ -8,6 +8,10 @@ if 'page' not in st.session_state:
   st.session_state['page'] = 'main'
 if 'email' not in st.session_state:
   st.session_state['email'] = None
+if st.session_state != 'blackjack':
+  del st.session_state['dealer']
+  del st.session_state['player']
+
 
 
 def show_main_page():
@@ -243,6 +247,12 @@ def show_blackjack():
     st.write("4.차례가 끝난 후 21을 넘지 않았다면 딜러가 카드를 받으며, 이때 딜러가 버스트하거나 플레이어의 총합이 딜러의 총합보다 21에 더 가까우면 플레이어가 승리합니다.")
     st.caption("딜러는 16 이하에서 무조건 히트, 17 이상에서 스테이합니다.")
     st.caption("버스트되지 않는 한, 딜러의 A 카드는 11로 계산합니다.")
+
+  if 'dealer' not in st.session_state:
+    st.session['dealer'] = {'card':[], sum:0}
+  if 'player' not in st.session_state:
+    st.session['player'] = {'card':[], sum:0}
+    
     
   if st.button("돌아가기"):
       st.session_state['page'] = 'main'

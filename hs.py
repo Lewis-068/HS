@@ -230,7 +230,7 @@ def show_developer_space_page():
       st.rerun()
 
 def show_blackjack():
-  st.title("이스터에그: 블랙잭")
+  st.title("이스터에그: 블랙잭(제작중)")
   st.write("가진 카드의 합이 21을 넘지 않으면서 딜러보다 21에 더 가까이 만들면 승리하는 게임입니다.")
   st.caption("개발자가 코딩하기 귀찮은 관계로 간소화된 룰을 적용합니다.")
   with st.expander("룰 설명"):

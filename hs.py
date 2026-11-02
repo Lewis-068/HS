@@ -356,10 +356,11 @@ def show_blackjack():
             st.session_state['player']['state'] = '패배'
             st.session_state['rate']['lose'] +=1
             st.session_state['rate']['match'] +=1
-        while st.session_state['dealer']['sum'] < 17:
-          st.session_state['dealer']['card'].append(random.choice(deck))
-          sumcard('dealer')
-        judgement()
+        else:
+          while st.session_state['dealer']['sum'] < 17:
+            st.session_state['dealer']['card'].append(random.choice(deck))
+            sumcard('dealer')
+          judgement()
         st.rerun()
     
 

@@ -269,6 +269,7 @@ def show_blackjack():
         st.session_state['dealer']['card'].append('?')
         st.session_state['player']['card'].append(random.choice(deck))
         st.session_state['player']['card'].append(random.choice(deck))
+        rerun()
     
 
   rerun, clear = st.columns(2)

@@ -371,7 +371,7 @@ def show_blackjack():
     rate = 0
   else:
     rate = (win / match) * 100
-  st.caption(f"현재 승률:{rate: .2f}% ({matah}전 {win}승 {push}무 {lose}패)")
+  st.caption(f"현재 승률:{rate: .2f}% ({match}전 {win}승 {push}무 {lose}패)")
       
 
 if st.session_state['page'] == 'main':

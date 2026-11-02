@@ -273,6 +273,18 @@ def show_blackjack():
     if st.session_state['player']['sum'] > 21:
       st.session_state['player']['state'] = '버스트(패배)'
       st.session_state['dealer']['state'] = '승리'
+    elif st.session_state['dealer']['sum'] > 21
+      st.session_state['dealer']['state'] = '버스트(패배)'
+      st.session_state['player']['state'] = '승리'
+    elif st.session_state['player']['sum'] > st.session_state['dealer']['sum']:
+      st.session_state['dealer']['state'] = '패배'
+      st.session_state['player']['state'] = '승리'
+    elif st.session_state['player']['sum'] < st.session_state['dealer']['sum']:
+      st.session_state['dealer']['state'] = '승리'
+      st.session_state['player']['state'] = '패배'
+    elif st.session_state['player']['sum'] = st.session_state['dealer']['sum']:
+      st.session_state['dealer']['state'] = '무승부'
+      st.session_state['player']['state'] = '무승부'
   
   with st.container(border=True):
     st.markdown('### 딜러')
@@ -295,12 +307,35 @@ def show_blackjack():
           st.session_state['player']['state'] = '블랙잭!'
           st.session_state['dealer']['state'] = '패배'
         st.rerun()
-    if st.session_state['dealer']['state'] == '딜링':
+    if st.session_state['dealer']['state'] == '딜링' and st.session_state['player']['state'] != '스테이':
       hit, stay = st.columns(2)
       with hit:
         if st.button('히트', use_container_width=True):
-         st.session_state['player']['state'] = '히트'
-        
+          st.session_state['player']['state'] = '히트'
+          st.session_state['player']['card'].append(random.choice(deck))
+          sumcard('player')
+          if st.session_state['player']['sum'] > 21:
+            st.session_state['player']['state'] = '버스트(패배)'
+            st.session_state['dealer']['state'] = '승리'
+            st.rerun()
+          else:
+            st.rerun()
+      with stay:
+        if st.buttion('스테이', use_container_width=True):
+          st.rerun()
+    if st.session_state['player']['state'] == '스테이':
+      st.session_state['dealer']['state'] = '히트'
+      st.session_state['dealer']['card'].remove('?')
+      st.session_state['dealer']['card'].append(random.choice(deck))
+      sumcard('dealer')
+      if st.session_state['dealer']['sum'] == 21:
+          st.session_state['dealer']['state'] = '블랙잭!'
+          st.session_state['player']['state'] = '패배'
+      while st.session_state['dealer']['sum'] < 17:
+        st.session_state['dealer']['card'].append(random.choice(deck))
+        sumcard('dealer')
+      judgement()
+      st.rerun
     
 
   rerun, clear = st.columns(2)

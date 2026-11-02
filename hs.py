@@ -298,7 +298,7 @@ def show_blackjack():
     if st.session_state['dealer']['state'] == '딜링':
       hit, stay = st.columns(2)
       with hit:
-        if st.button('히트', use_container_width=True)
+        if st.button('히트', use_container_width=True):
          st.session_state['player']['state'] = '히트'
         
     

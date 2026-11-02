@@ -257,7 +257,7 @@ def show_blackjack():
     st.markdown('### 딜러')
     st.caption(f'상태: {st.session_state['dealer']['state']}')
     st.write(f"현재 패: {st.session_state['dealer']['card']}")
-  with st.container(border=True, height=170):
+  with st.container(border=True):
     st.markdown('### 플레이어')
     st.caption(f'상태: {st.session_state['player']['state']}')
     st.write(f"현재 패: {st.session_state['player']['card']}")

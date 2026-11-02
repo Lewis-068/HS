@@ -269,6 +269,9 @@ def show_blackjack():
         elif st.session_state[subject]['sum'] > (11 - A_count):
           st.session_state[subject]['sum'] += 1
         A_count -= 1
+  def judgement():
+    if st.session_state['player']['sum'] > 21:
+      
   
   with st.container(border=True):
     st.markdown('### 딜러')
@@ -286,7 +289,10 @@ def show_blackjack():
         st.session_state['dealer']['card'].append('?')
         st.session_state['player']['card'].append(random.choice(deck))
         st.session_state['player']['card'].append(random.choice(deck))
-        
+        sumcard('player')
+        if st.session_state['player']['sum'] == 21:
+          st.session_state['player']['state'] = '블랙잭!'
+          st.session_state['dealer']['state'] = '패배'
         st.rerun()
     if st.session_state['dealer']['state'] == '딜링':
       hit, stay = st.columns(2)

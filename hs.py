@@ -8,8 +8,9 @@ if 'page' not in st.session_state:
   st.session_state['page'] = 'main'
 if 'email' not in st.session_state:
   st.session_state['email'] = None
-if st.session_state != 'blackjack':
+if st.session_state != 'blackjack' and 'dealer' in st.session_state:
   del st.session_state['dealer']
+if st.session_state != 'blackjack' and 'player' in st.session_state:
   del st.session_state['player']
 
 

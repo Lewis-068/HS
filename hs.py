@@ -255,19 +255,20 @@ def show_blackjack():
   if 'player' not in st.session_state:
     st.session_state['player'] = {'card':[], 'sum':0, 'state':None}
   def sumcard(subject):
-    st.session_state[{subject}]['sum'] = 0
-    st.session_state[{subject}]['card'].sort(key=lambda x: x == 'A')
-    A_count = st.session_state[{subject}]['card'].count('A')
-    for card in st.session_state[{subject}]['card']:
+    st.session_state[subject]['sum'] = 0
+    st.session_state[subject]['card'].sort(key=lambda x: x == 'A')
+    A_count = st.session_state[subject]['card'].count('A')
+    for card in st.session_state[subject]['card']:
       if card == 'K' or card == 'Q' or card == 'J':
-        st.session_state[{subject}]['sum'] += 10
+        st.session_state[subject]['sum'] += 10
       elif isinstance(card, int):
-        st.session_state[{subject}]['sum'] += card
+        st.session_state[subject]['sum'] += card
       elif card == 'A':
-        if st.session_state[{subject}]['sum'] <= (11 - A_count):
-          st.session_state[{subject}]['sum'] += 11
-        elif st.session_state[{subject}]['sum'] > (11 - A_count):
-          st. session_state[{subject}]['sum'] += 1
+        if st.session_state[subject]['sum'] <= (11 - A_count):
+          st.session_state[subject]['sum'] += 11
+        elif st.session_state[subject]['sum'] > (11 - A_count):
+          st.session_state[subject]['sum'] += 1
+        A_count -= 1
   
   with st.container(border=True):
     st.markdown('### 딜러')

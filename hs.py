@@ -8,9 +8,9 @@ if 'page' not in st.session_state:
   st.session_state['page'] = 'main'
 if 'email' not in st.session_state:
   st.session_state['email'] = None
-if st.session_state != 'blackjack' and 'dealer' in st.session_state:
+if st.session_state['page'] != 'blackjack' and 'dealer' in st.session_state:
   del st.session_state['dealer']
-if st.session_state != 'blackjack' and 'player' in st.session_state:
+if st.session_state['page'] != 'blackjack' and 'player' in st.session_state:
   del st.session_state['player']
 
 
@@ -269,7 +269,8 @@ def show_blackjack():
         st.session_state['dealer']['card'].append('?')
         st.session_state['player']['card'].append(random.choice(deck))
         st.session_state['player']['card'].append(random.choice(deck))
-        st.caption(f'상태: {st.session_state['dealer']['state']}')
+        rerun()
+        
     
 
   rerun, clear = st.columns(2)

@@ -248,12 +248,12 @@ def show_blackjack():
     st.write("4.차례가 끝난 후 21을 넘지 않았다면 딜러가 카드를 받으며, 이때 딜러가 버스트하거나 플레이어의 총합이 딜러의 총합보다 21에 더 가까우면 플레이어가 승리합니다.")
     st.caption("딜러는 16 이하에서 무조건 히트, 17 이상에서 스테이합니다.")
     st.caption("버스트되지 않는 한, 딜러의 A 카드는 11로 계산합니다.")
-
+  deck =  ['A', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K']
   if 'dealer' not in st.session_state:
     st.session_state['dealer'] = {'card':[], 'sum':0, 'state':None}
   if 'player' not in st.session_state:
     st.session_state['player'] = {'card':[], 'sum':0, 'state':None}
-  with st.container(border=True, height=170):
+  with st.container(border=True):
     st.markdown('### 딜러')
     st.caption(f'상태: {st.session_state['dealer']['state']}')
     st.write(f"현재 패: {st.session_state['dealer']['card']}")
@@ -261,6 +261,14 @@ def show_blackjack():
     st.markdown('### 플레이어')
     st.caption(f'상태: {st.session_state['player']['state']}')
     st.write(f"현재 패: {st.session_state['player']['card']}")
+    if st.session_state['dealer']['state'] == None:
+      if st.button('딜링', use_container_width=True):
+        st.session_state['dealer']['state'] = '딜링'
+        st.session_state['player']['state'] = '딜링' 
+        st.session_state['dealer']['card'].append(random.choice(deck))
+        st.session_state['dealer']['card'].append('?')
+        st.session_state['player']['card'].append(random.choice(deck))
+        st.session_state['player']['card'].append(random.choice(deck))
     
 
   rerun, clear = st.columns(2)

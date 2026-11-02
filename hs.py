@@ -13,7 +13,7 @@ if st.session_state['page'] != 'blackjack' and 'dealer' in st.session_state:
 if st.session_state['page'] != 'blackjack' and 'player' in st.session_state:
   del st.session_state['player']
 if st.session_state['page'] != 'blackjack' and 'rate' in st.session_state:
-  del st.session_state['plyaer']
+  del st.session_state['rate']
 
 
 

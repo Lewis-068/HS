@@ -380,8 +380,12 @@ def show_blackjack():
         st.session_state['rate']['match'] +=1
         st.rerun()
   win = st.session_state['rate']['win']
+  if win % 1 == 0:
+    win = int(win)
   push = st.session_state['rate']['push']
   lose = st.session_state['rate']['lose']
+  if lose % 1 == 0:
+    lose = int(lose)
   match = st.session_state['rate']['match']
   match2 = win + push + lose
   if match2 == 0:

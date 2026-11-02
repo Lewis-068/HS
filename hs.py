@@ -259,7 +259,7 @@ def show_blackjack():
   if 'player' not in st.session_state:
     st.session_state['player'] = {'card':[], 'sum':0, 'state':None}
   if 'rate' not in st.session_state:
-    st.session_state['rate'] = {'win':0, 'push':0, 'lose':0}
+    st.session_state['rate'] = {'match':0, 'win':0, 'push':0, 'lose':0}
   def sumcard(subject):
     st.session_state[subject]['sum'] = 0
     st.session_state[subject]['card'].sort(key=lambda x: x == 'A')
@@ -280,22 +280,27 @@ def show_blackjack():
       st.session_state['player']['state'] = '버스트(패배)'
       st.session_state['dealer']['state'] = '승리'
       st.session_state['rate']['lose'] +=1
+      st.session_state['rate']['match'] +=1
     elif st.session_state['dealer']['sum'] > 21:
       st.session_state['dealer']['state'] = '버스트(패배)'
       st.session_state['player']['state'] = '승리'
       st.session_state['rate']['win'] +=1
+      st.session_state['rate']['match'] +=1
     elif st.session_state['player']['sum'] > st.session_state['dealer']['sum']:
       st.session_state['dealer']['state'] = '패배'
       st.session_state['player']['state'] = '승리'
       st.session_state['rate']['win'] +=1
+      st.session_state['rate']['match'] +=1
     elif st.session_state['player']['sum'] < st.session_state['dealer']['sum']:
       st.session_state['dealer']['state'] = '승리'
       st.session_state['player']['state'] = '패배'
       st.session_state['rate']['lose'] +=1
+      st.session_state['rate']['match'] +=1
     elif st.session_state['player']['sum'] == st.session_state['dealer']['sum']:
       st.session_state['dealer']['state'] = '무승부'
       st.session_state['player']['state'] = '무승부'
       st.session_state['rate']['push'] +=1
+      st.session_state['rate']['match'] +=1
   
   with st.container(border=True):
     st.markdown('### 딜러')
@@ -318,6 +323,7 @@ def show_blackjack():
           st.session_state['player']['state'] = '블랙잭!'
           st.session_state['dealer']['state'] = '패배'
           st.session_state['rate']['win'] +=1.5
+          st.session_state['rate']['match'] +=1
         st.rerun()
     if st.session_state['dealer']['state'] == '딜링' and st.session_state['player']['state'] != '스테이':
       hit, stay = st.columns(2)
@@ -330,6 +336,7 @@ def show_blackjack():
             st.session_state['player']['state'] = '버스트(패배)'
             st.session_state['dealer']['state'] = '승리'
             st.session_state['rate']['lose'] +=1
+            st.session_state['rate']['match'] +=1
             st.rerun()
           else:
             st.rerun()
@@ -346,6 +353,7 @@ def show_blackjack():
             st.session_state['dealer']['state'] = '블랙잭!'
             st.session_state['player']['state'] = '패배'
             st.session_state['rate']['lose'] +=1
+            st.session_state['rate']['match'] +=1
         while st.session_state['dealer']['sum'] < 17:
           st.session_state['dealer']['card'].append(random.choice(deck))
           sumcard('dealer')
@@ -369,15 +377,17 @@ def show_blackjack():
         st.session_state['dealer'] = {'card':[], 'sum':0, 'state':None}
         st.session_state['player'] = {'card':[], 'sum':0, 'state':None}
         st.session_state['rate']['lose'] +=0.5
+        st.session_state['rate']['match'] +=1
         st.rerun()
   win = st.session_state['rate']['win']
   push = st.session_state['rate']['push']
   lose = st.session_state['rate']['lose']
-  match = win + push + lose
-  if match == 0:
+  match = st.session_state['rate']['match']
+  match2 = win + push + lose
+  if match2 == 0:
     rate = 0
   else:
-    rate = (win / match) * 100
+    rate = ((win + (push/2)) / match2) * 100
   st.write(f"현재 승률:{rate: .2f}% ({match}전 {win}승 {push}무 {lose}패)")
   st.caption("이 페이지를 나가면 승률이 초기화됩니다.")
       

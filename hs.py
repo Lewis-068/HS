@@ -121,21 +121,21 @@ def show_main_page():
   with tabd:
     with st.expander('**대수** | 11. 사인 법칙과 코사인 법칙 ~ 16. 수학적 귀납법 + 학습지'):
       st.caption("삼각함수의 활용 학습지 끝자락에 있던 '삼각함수의 미분'과 arcsin은 미포함")
-    with st.expander('**미적분1** | 미적분1 정석 전체? + 학습지'):
+    with st.expander('**미적분1** | 3. 함수의 미분 ~ 13. 속도 - 거리와 적분 + 학습지'):
       st.caption("중간 내용 포함이다 vs 8장(속도-가속도와 미분)부터다 << 알려주세요")
-    with st.expander('**전자기와 양자** | Chapter 34 빛의 본질과 광선 광학의 원리 ~ Chapter 41 원자 물리학 or Chapter 42 핵물리학'):
-      st.caption("-")
+    with st.expander('**전자기와 양자** | Chapter 34 빛의 본질과 광선 광학의 원리 ~ Chapter 42 핵물리학'):
+      st.caption("단, Chapter 38 상대성이론은 제외")
     with st.expander('**화학 반응의 세계** | 11. 산화 환원 ~ 15. 유기화학3'):
       st.caption("-")
-    with st.expander('**생물의 유전** | 연습문제 + 중간고사 범위 일부 + 원핵생물의 전사 조절 ~'):
+    with st.expander('**생물의 유전** | 연습문제 + 중간고사 범위 일부 + 원핵생물의 전사 조절 ~ 3. 생명공학기술'):
       st.caption("일단 중간 고사 이후 범위부터 공부하다가, 나중에 알려주는 범위 받기.")
-    with st.expander('**행성우주과학** | 별의 질량 ~'):
+    with st.expander('**행성우주과학** | 별의 질량 ~ 우주의 거대 구조'):
       st.caption("-")
-    with st.expander('**공통국어2** | {확인중}'):
-      st.caption("범위 확인중입니다.")
-    with st.expander('**통합사회2** | {확인중}'):
-      st.caption("범위 확인중입니다.")
-    with st.expander('**공통영어2** | 2025학년도 10월 고1 영어 모의고사 + 2026학년도 10월 고1 영어 모의고사'):
+    with st.expander('**공통국어2** | 교과서 3단원 ~ 5단원'):
+      st.caption("-")
+    with st.expander('**통합사회2** | III 시장경제와 지속가능발전 3. 금융 자산과 금융 관리 ~ V. 미래와 지속가능한 삶'):
+      st.caption("-")
+    with st.expander('**공통영어2** | 2025학년도 10월 고1 영어 모의고사 + 2026학년도 10월 고1 영어 모의고사 + 수업 프린트'):
       st.caption("지문 범위는 11/02 ~ 11/06 중으로 배부.")
 
   

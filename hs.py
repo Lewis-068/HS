@@ -271,7 +271,8 @@ def show_blackjack():
         A_count -= 1
   def judgement():
     if st.session_state['player']['sum'] > 21:
-      
+      st.session_state['player']['state'] = '버스트(패배)'
+      st.session_state['dealer']['state'] = '승리'
   
   with st.container(border=True):
     st.markdown('### 딜러')

@@ -260,7 +260,7 @@ def show_blackjack():
   if 'player' not in st.session_state:
     st.session_state['player'] = {'card':[], 'sum':0, 'state':None}
   if 'rate' not in st.session_state:
-    st.session_state['rate'] = {'match':0, 'win':0, 'push':0, 'lose':0}
+    st.session_state['rate'] = {'match':0, 'win':0, 'blackjack':0, 'push':0, 'lose':0, 'surrender':0}
   def sumcard(subject):
     st.session_state[subject]['sum'] = 0
     st.session_state[subject]['card'].sort(key=lambda x: x == 'A')

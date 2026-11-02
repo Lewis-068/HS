@@ -282,7 +282,7 @@ def show_blackjack():
     elif st.session_state['player']['sum'] < st.session_state['dealer']['sum']:
       st.session_state['dealer']['state'] = '승리'
       st.session_state['player']['state'] = '패배'
-    elif st.session_state['player']['sum'] = st.session_state['dealer']['sum']:
+    elif st.session_state['player']['sum'] == st.session_state['dealer']['sum']:
       st.session_state['dealer']['state'] = '무승부'
       st.session_state['player']['state'] = '무승부'
   

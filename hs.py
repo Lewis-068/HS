@@ -312,6 +312,7 @@ def show_blackjack():
     if st.button("게임 초기화"):
       st.session_state['dealer'] = {'card':[], 'sum':0, 'state':None}
       st.session_state['player'] = {'card':[], 'sum':0, 'state':None}
+      st.rerun()
       
 
 if st.session_state['page'] == 'main':

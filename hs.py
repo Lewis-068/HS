@@ -250,9 +250,9 @@ def show_blackjack():
     st.caption("버스트되지 않는 한, 딜러의 A 카드는 11로 계산합니다.")
 
   if 'dealer' not in st.session_state:
-    st.session_state['dealer'] = {'card':[], sum:0, state:None}
+    st.session_state['dealer'] = {'card':[], 'sum':0, 'state':None}
   if 'player' not in st.session_state:
-    st.session_state['player'] = {'card':[], sum:0, state:None}
+    st.session_state['player'] = {'card':[], 'sum':0, 'state':None}
   with st.container(border=True, height=170):
     st.markdown('### 딜러')
     st.caption(f'상태: {st.session_state['dealer']['state']}')
@@ -270,8 +270,8 @@ def show_blackjack():
         st.rerun()
   with clear:
     if st.button("게임 초기화"):
-      st.session_state['dealer'] = {'card':[], sum:0, state:None}
-      st.session_state['player'] = {'card':[], sum:0, state:None}
+      st.session_state['dealer'] = {'card':[], 'sum':0, 'state':None}
+      st.session_state['player'] = {'card':[], 'sum':0, 'state':None}
       
 
 if st.session_state['page'] == 'main':

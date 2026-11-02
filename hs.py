@@ -369,7 +369,7 @@ def show_blackjack():
         st.session_state['page'] = 'main'
         st.rerun()
   with clear:
-    if st.session_state['player']['state'] == '승리' or st.session_state['player']['state'] == '패배' or st.session_state['dealer']['state'] == '승리' or st.session_state['dealer']['state'] == '패배' or st.session_state['player']['state'] == None or st.session_state['dealer']['state'] == None:
+    if st.session_state['player']['state'] == '승리' or st.session_state['player']['state'] == '패배' or st.session_state['dealer']['state'] == '승리' or st.session_state['dealer']['state'] == '패배' or st.session_state['player']['state'] == None or st.session_state['dealer']['state'] or st.session_state['player']['state'] == '무승부' or st.session_state['dealer']['state'] == '무승부' == None:
       if st.button("게임 초기화"):
         st.session_state['dealer'] = {'card':[], 'sum':0, 'state':None}
         st.session_state['player'] = {'card':[], 'sum':0, 'state':None}

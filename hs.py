@@ -12,6 +12,8 @@ if st.session_state['page'] != 'blackjack' and 'dealer' in st.session_state:
   del st.session_state['dealer']
 if st.session_state['page'] != 'blackjack' and 'player' in st.session_state:
   del st.session_state['player']
+if st.session_state['page'] != 'blackjack' and 'rate' in st.session_state:
+  del st.session_state['plyaer']
 
 
 
@@ -244,6 +246,7 @@ def show_blackjack():
     st.write("2. 플레이어는 자신의 카드를 보고 카드를 더 받을 지(Hit), 차례를 마칠 지(Stay) 결정합니다.")
     st.caption("이때, A는 1또는 11 중 플레이어에게 유리한 수로, K Q J는 10으로 적용합니다.")
     st.caption("만일 플레이어의 첫 패가 A와 10(10, K, Q, J)일 경우 곧바로 21이 되어 승리하며, 이 패를 '블랙잭'이라고 합니다.")
+    st.caption("블랙잭으로 승리할 경우 2회 승리로 간주합니다.")
     st.caption("현재 숫자가 21을 넘지(Bust)않는 이상, 원하는 만큼 카드를 더 받을 수 있습니다.")
     st.write("3.차례가 끝나고 카드의 수를 합산한 결과, 21을 넘을 경우 딜러의 패에 관계없이 반드시 패배합니다.")
     st.write("4.차례가 끝난 후 21을 넘지 않았다면 딜러가 카드를 받으며, 이때 딜러가 버스트하거나 플레이어의 총합이 딜러의 총합보다 21에 더 가까우면 플레이어가 승리합니다.")
@@ -254,6 +257,8 @@ def show_blackjack():
     st.session_state['dealer'] = {'card':[], 'sum':0, 'state':None}
   if 'player' not in st.session_state:
     st.session_state['player'] = {'card':[], 'sum':0, 'state':None}
+  if 'rate' not in st.session_state:
+    st.session_state['rate'] = {'win':0, 'push':0, 'lose':0}
   def sumcard(subject):
     st.session_state[subject]['sum'] = 0
     st.session_state[subject]['card'].sort(key=lambda x: x == 'A')
@@ -273,18 +278,23 @@ def show_blackjack():
     if st.session_state['player']['sum'] > 21:
       st.session_state['player']['state'] = '버스트(패배)'
       st.session_state['dealer']['state'] = '승리'
+      st.session_state['rate']['lose'] +=1
     elif st.session_state['dealer']['sum'] > 21:
       st.session_state['dealer']['state'] = '버스트(패배)'
       st.session_state['player']['state'] = '승리'
+      st.session_state['rate']['win'] +=1
     elif st.session_state['player']['sum'] > st.session_state['dealer']['sum']:
       st.session_state['dealer']['state'] = '패배'
       st.session_state['player']['state'] = '승리'
+      st.session_state['rate']['win'] +=1
     elif st.session_state['player']['sum'] < st.session_state['dealer']['sum']:
       st.session_state['dealer']['state'] = '승리'
       st.session_state['player']['state'] = '패배'
+      st.session_state['rate']['lose'] +=1
     elif st.session_state['player']['sum'] == st.session_state['dealer']['sum']:
       st.session_state['dealer']['state'] = '무승부'
       st.session_state['player']['state'] = '무승부'
+      st.session_state['rate']['push'] +=1
   
   with st.container(border=True):
     st.markdown('### 딜러')
@@ -306,6 +316,7 @@ def show_blackjack():
         if st.session_state['player']['sum'] == 21:
           st.session_state['player']['state'] = '블랙잭!'
           st.session_state['dealer']['state'] = '패배'
+          st.session_state['rate']['win'] +=2
         st.rerun()
     if st.session_state['dealer']['state'] == '딜링' and st.session_state['player']['state'] != '스테이':
       hit, stay = st.columns(2)
@@ -317,6 +328,7 @@ def show_blackjack():
           if st.session_state['player']['sum'] > 21:
             st.session_state['player']['state'] = '버스트(패배)'
             st.session_state['dealer']['state'] = '승리'
+            st.session_state['rate']['lose'] +=1
             st.rerun()
           else:
             st.rerun()
@@ -332,6 +344,7 @@ def show_blackjack():
         if st.session_state['dealer']['sum'] == 21:
             st.session_state['dealer']['state'] = '블랙잭!'
             st.session_state['player']['state'] = '패배'
+            st.session_state['rate']['lose'] +=1
         while st.session_state['dealer']['sum'] < 17:
           st.session_state['dealer']['card'].append(random.choice(deck))
           sumcard('dealer')
@@ -345,10 +358,17 @@ def show_blackjack():
         st.session_state['page'] = 'main'
         st.rerun()
   with clear:
-    if st.button("게임 초기화"):
+    if st.button("서렌더"):
       st.session_state['dealer'] = {'card':[], 'sum':0, 'state':None}
       st.session_state['player'] = {'card':[], 'sum':0, 'state':None}
+      st.session_state['rate']['lose'] +=1
       st.rerun()
+  win = st.session_state['rate']['win']
+  push = st.session_state['rate']['push']
+  lose = st.session_state['rate']['lose']
+  match = win + push + lose
+  rate = (win / match) * 100
+  st.caption(f"현재 승률:{rate: .2f}% ({matah}전 {win}승 {push}무 {lose}패)")
       
 
 if st.session_state['page'] == 'main':

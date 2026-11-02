@@ -238,6 +238,7 @@ def show_blackjack():
   st.title("이스터에그: 블랙잭(제작중)")
   st.write("가진 카드의 합이 21을 넘지 않으면서 딜러보다 21에 더 가까이 만들면 승리하는 게임입니다.")
   st.caption("개발자가 코딩하기 귀찮은 관계로 간소화된 룰을 적용합니다.")
+  st.caption("코딩의 편의를 위해 항상 A 카드는 맨 뒤에 배치됩니다.")
   with st.expander("룰 설명"):
     st.write("1. 플레이어와 딜러가 각각 카드를 두 장씩 받습니다. 이때, 딜러의 두번째 카드는 비공개합니다.")
     st.write("2. 플레이어는 자신의 카드를 보고 카드를 더 받을 지(Hit), 차례를 마칠 지(Stay) 결정합니다.")
@@ -253,6 +254,21 @@ def show_blackjack():
     st.session_state['dealer'] = {'card':[], 'sum':0, 'state':None}
   if 'player' not in st.session_state:
     st.session_state['player'] = {'card':[], 'sum':0, 'state':None}
+  def sumcard(subject):
+    st.session_state[{subject}]['sum'] = 0
+    st.session_state[{subject}]['card'].sort(key=lambda x: x == 'A')
+    A_count = st.session_state[{subject}]['card'].count('A')
+    for card in st.session_state[{subject}]['card']:
+      if card == 'K' or card == 'Q' or card == 'J':
+        st.session_state[{subject}]['sum'] += 10
+      elif isinstance(card, int):
+        st.session_state[{subject}]['sum'] += card
+      elif card == 'A':
+        if st.session_state[{subject}]['sum'] <= (11 - A_count):
+          st.session_state[{subject}]['sum'] += 11
+        elif st.session_state[{subject}]['sum'] > (11 - A_count):
+          st. session_state[{subject}]['sum'] += 1
+  
   with st.container(border=True):
     st.markdown('### 딜러')
     st.caption(f'상태: {st.session_state['dealer']['state']}')
@@ -269,7 +285,13 @@ def show_blackjack():
         st.session_state['dealer']['card'].append('?')
         st.session_state['player']['card'].append(random.choice(deck))
         st.session_state['player']['card'].append(random.choice(deck))
+        
         st.rerun()
+    if st.session_state['dealer']['state'] == '딜링':
+      hit, stay = st.columns(2)
+      with hit:
+        if st.button('히트', use_container_width=True)
+         st.session_state['player']['state'] = '히트'
         
     
 

@@ -322,6 +322,7 @@ def show_blackjack():
             st.rerun()
       with stay:
         if st.button('스테이', use_container_width=True):
+          st.session_state['player']['state'] = '스테이'
           st.rerun()
     if st.session_state['player']['state'] == '스테이':
       st.session_state['dealer']['state'] = '히트'

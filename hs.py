@@ -154,6 +154,8 @@ def show_main_page():
         ]
         tmi = random.choice(tmi_list)
         st.toast(tmi)
+      elif code.lower() == "blackjack":
+        st.session_state['page'] = 'blackjack'
       elif code == "":
         st.toast("코드를 입력해주세요.")
       else:
@@ -227,6 +229,25 @@ def show_developer_space_page():
       st.session_state['page'] = 'main'
       st.rerun()
 
+def show_blackjack():
+  st.title("이스터에그: 블랙잭")
+  st.write("가진 카드의 합이 21을 넘지 않으면서 딜러보다 21에 더 가까이 만들면 승리하는 게임입니다.")
+  st.caption("개발자가 코딩하기 귀찮은 관계로 간소화된 룰을 적용합니다.")
+  with st.expander("룰 설명"):
+    st.write("1. 플레이어와 딜러가 각각 카드를 두 장씩 받습니다. 이때, 딜러의 두번째 카드는 비공개합니다.")
+    st.write("2. 플레이어는 자신의 카드를 보고 카드를 더 받을 지(Hit), 차례를 마칠 지(Stay) 결정합니다.")
+    st.caption("이때, A는 1또는 11 중 플레이어에게 유리한 수로, K Q J는 10으로 적용합니다.")
+    st.caption("만일 플레이어의 첫 패가 A와 10(10, K, Q, J)일 경우 곧바로 21이 되어 승리하며, 이 패를 '블랙잭'이라고 합니다.")
+    st.caption("현재 숫자가 21을 넘지(Bust)않는 이상, 원하는 만큼 카드를 더 받을 수 있습니다.")
+    st.write("3.차례가 끝나고 카드의 수를 합산한 결과, 21을 넘을 경우 딜러의 패에 관계없이 반드시 패배합니다.")
+    st.write("4.차례가 끝난 후 21을 넘지 않았다면 딜러가 카드를 받으며, 이때 딜러가 버스트하거나 플레이어의 총합이 딜러의 총합보다 21에 더 가까우면 플레이어가 승리합니다.")
+    st.caption("딜러는 16 이하에서 무조건 히트, 17 이상에서 스테이합니다.")
+    st.caption("버스트되지 않는 한, 딜러의 A 카드는 11로 계산합니다.")
+    
+  if st.button("돌아가기"):
+      st.session_state['page'] = 'main'
+      st.rerun()
+
 if st.session_state['page'] == 'main':
     show_main_page()
 elif st.session_state['page'] == 'suggest':
@@ -235,3 +256,5 @@ elif st.session_state['page'] == 'suggest_record':
     show_suggest_record_page()
 elif st.session_state['page'] == 'developer':
     show_developer_space_page()
+elif st.session_state['page'] == 'blackjack':
+    show_blackjack()

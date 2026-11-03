@@ -40,7 +40,7 @@ def show_main_page():
     with st.container(border=True, height=170):
       st.markdown("### 물리")
       st.caption("역학과 에너지")
-      st.link_button("물리 개념 정리_HS","https://docs.google.com/document/d/1Hq--M0r059_DK8DVi7FSDuMlbZuf3KcgYEyS9QVIAEM/edit?usp=sharing", use_container_width=True)
+      st.link_button("물리 개념 정리(종료)_HS","https://docs.google.com/document/d/1Hq--M0r059_DK8DVi7FSDuMlbZuf3KcgYEyS9QVIAEM/edit?usp=sharing", use_container_width=True)
   with tab3:
     with st.container(border=True, height=170):
       st.markdown("### 화학")

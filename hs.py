@@ -73,7 +73,7 @@ def show_main_page():
   with taba:
     with st.expander('**대수** | 증명(11/23 월요일 1교시 예상)'):
       st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽑아 증명.')
-    with st.expander('**전자기와 양자** | science snack project (11/02~11/06)'):
+    with st.expander('**전자기와 양자** | science snack project (11/16~11/18 예상)'):
       st.caption('제작 세 차시, 발표 두 차시.')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
@@ -91,7 +91,7 @@ def show_main_page():
       st.caption('범위는 정석 7장 ~ 12장')
     with st.expander('**대수** | 증명(날짜 미정)'):
       st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽑아 증명.')
-    with st.expander('**전자기와 양자** | science snack project (11/02~11/06)'):
+    with st.expander('**전자기와 양자** | science snack project (11/16~11/18 예상)'):
       st.caption('제작 세 차시, 발표 두 차시.')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
@@ -107,7 +107,7 @@ def show_main_page():
       st.caption('범위는 정석 7장 ~ 12장')
     with st.expander('**대수** | 증명(날짜 미정)'):
       st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽑아 증명.')
-    with st.expander('**전자기와 양자** | science snack project (11/02~11/06)'):
+    with st.expander('**전자기와 양자** | science snack project (11/16~11/18 예상)'):
       st.caption('제작 세 차시, 발표 두 차시.')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")

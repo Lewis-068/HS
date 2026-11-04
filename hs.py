@@ -87,7 +87,7 @@ def show_main_page():
       st.caption('공지된 내용이 없습니다.')
     with st.expander('**통합사회2** | 생애 주기별 금융 생활 설계'):
       st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계')
-    with st.expander('**공통영어2** | 말하기(날짜미정)'):
+    with st.expander('**공통영어2** | 말하기(11/09 월요일)'):
       st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
   with tabb:
@@ -107,7 +107,7 @@ def show_main_page():
       st.caption('공지된 내용이 없습니다.')
     with st.expander('**통합사회2** | 생애 주기별 금융 생활 설계'):
       st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계')
-    with st.expander('**공통영어2** | 말하기(날짜미정)'):
+    with st.expander('**공통영어2** | 말하기(11/09 월요일)'):
       st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
   with tabc:
@@ -127,7 +127,7 @@ def show_main_page():
       st.caption('공지된 내용이 없습니다.')
     with st.expander('**통합사회2** | 생애 주기별 금융 생활 설계'):
       st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계')
-    with st.expander('**공통영어2** | 말하기(날짜미정)'):
+    with st.expander('**공통영어2** | 말하기(11/09 월요일)'):
       st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
   with tabd:

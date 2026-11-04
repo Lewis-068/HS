@@ -69,11 +69,11 @@ def show_main_page():
     with st.container(border=True, height=200):
       st.markdown('### 11월 16일 월요일')
       st.caption('주요 수업교체: -')
-      st.expander('1-1 시간표'):
+      with st.expander('1-1 시간표'):
         st.caption('-')
-      st.expander('1-2 시간표'):
+      with st.expander('1-2 시간표'):
         st.caption('-')
-      st.expander('1-3 시간표'):
+      with st.expander('1-3 시간표'):
         st.caption('-')
   
   with col_left:

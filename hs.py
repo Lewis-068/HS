@@ -25,7 +25,7 @@ def show_main_page():
   with drive:
     st.link_button("공유 드라이브","https://drive.google.com/drive/folders/0AGBBqhm2jLp4Uk9PVA?hl=ko")
   
-  tab1, tab2, tab3, tab4, tab5 = st.tabs(['수학','물리','화학','생명','지구'])
+  tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['수학','물리학','화학','생명과학','지구과학','문과 과목','수능 전 임시시간표'])
   
   st.info("**[공지사항]** 유저 간 소통 페이지 제작 시도중입니다.")
   
@@ -57,7 +57,25 @@ def show_main_page():
       st.markdown("### 지구")
       st.caption("행성우주 과학")
       st.link_button("지구과학 정리_HS", "https://docs.google.com/document/d/1YOST6DnB_4Dr_jXNPWYKQ8C2EXSWMlUK6Q9_FuhP0Gk/edit?usp=sharing", use_container_width=True)
-
+  with tab6:
+    with st.container(border=True, height=170):
+      st.markdown("### 국어")
+      st.caption('-')
+      st.markdown("### 사회")
+      st.caption('-')
+      st.markdown("### 영어")
+      st.markdown('-')
+  with tab7:
+    with st.container(border=True, height=200):
+      st.markdown('### 11월 16일 월요일')
+      st.caption('주요 수업교체: -')
+      st.expander('1-1 시간표'):
+        st.caption('-')
+      st.expander('1-2 시간표'):
+        st.caption('-')
+      st.expander('1-3 시간표'):
+        st.caption('-')
+  
   with col_left:
     st.link_button("이메일 수신 동의/미동의", "https://docs.google.com/forms/d/e/1FAIpQLScJCCfpfFsHKUqPGoQ0PcNHRv3RysKb8nrVF4jmamunX3fHOA/viewform?usp=publish-editor")
 

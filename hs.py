@@ -62,7 +62,7 @@ def show_main_page():
     with st.container(border=True, height=170):
       st.markdown("### 생명과학")
       biology_list = ["사전 정의는 '생명에 관계되는 현상을 종합적으로 연구하는 과학'이다.",
-                   "사람의 미토콘드리아는 AUA를 개시 코돈으로 사용하기도 한다."
+                   "사람의 미토콘드리아는 AUA를 개시코돈으로 사용하기도 한다."
                   ]
       biology = random.choice(biology_list)
       st.caption(f"캡션: {biology}")  

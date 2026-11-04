@@ -38,7 +38,7 @@ def show_main_page():
                    "교육과정 중에서는 미분 이후에 적분을 배우지만, 실제로 더 먼저 탄생한 것은 적분이다."
                   ]
       math = random.choice(math_list)
-      st.caption(math)
+      st.caption(f"캡션: {math}")
       st.link_button("수학 필기 모음_HS","https://docs.google.com/document/d/1IfHRtknxkkj1dtf5h2tnIFDs0aYaJgRB7KfH9WbWAQQ/edit?usp=sharing", use_container_width=True)
   with tab2:
     with st.container(border=True, height=170):

@@ -34,7 +34,11 @@ def show_main_page():
   with tab1:
     with st.container(border=True, height=170):
       st.markdown("### 수학")
-      st.caption("수량 및 공간의 성질에 관하여 연구하는 학문(표준국어대사전)")
+      math_list = ["사전 정의는 '수량 및 공간의 성질에 관하여 연구하는 학문'이다.",
+                   "교육과정 중에서는 미분 이후에 적분을 배우지만, 실제로 더 먼저 탄생한 것은 적분이다."
+                  ]
+      math = random.choice(math_list)
+      st.caption(math)
       st.link_button("수학 필기 모음_HS","https://docs.google.com/document/d/1IfHRtknxkkj1dtf5h2tnIFDs0aYaJgRB7KfH9WbWAQQ/edit?usp=sharing", use_container_width=True)
   with tab2:
     with st.container(border=True, height=170):

@@ -68,7 +68,7 @@ def show_main_page():
       st.markdown("### 영어")
       st.markdown('-')
   with tab7:
-    with st.container(border=True, height=240):
+    with st.container(border=True, height=300):
       st.markdown('### 11월 16일 월요일')
       st.caption('주요 수업교체: -')
       with st.expander('1-1 시간표'):

@@ -58,6 +58,7 @@ def show_main_page():
       st.caption("행성우주 과학")
       st.link_button("지구과학 정리_HS", "https://docs.google.com/document/d/1YOST6DnB_4Dr_jXNPWYKQ8C2EXSWMlUK6Q9_FuhP0Gk/edit?usp=sharing", use_container_width=True)
   with tab6:
+    st.caption("아직 자료가 없습니다.")
   with tab7:
     with st.container(border=True, height=280):
       st.markdown('### 11월 16일 월요일')

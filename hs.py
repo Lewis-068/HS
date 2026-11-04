@@ -34,28 +34,28 @@ def show_main_page():
   with tab1:
     with st.container(border=True, height=170):
       st.markdown("### 수학")
-      st.caption("대수, 미적분1")
+      st.caption("수량 및 공간의 성질에 관하여 연구하는 학문(표준국어대사전)")
       st.link_button("수학 필기 모음_HS","https://docs.google.com/document/d/1IfHRtknxkkj1dtf5h2tnIFDs0aYaJgRB7KfH9WbWAQQ/edit?usp=sharing", use_container_width=True)
   with tab2:
     with st.container(border=True, height=170):
-      st.markdown("### 물리")
-      st.caption("역학과 에너지")
+      st.markdown("### 물리학")
+      st.caption("자연 현상의 보편적 법칙을 연구하는 자연 과학의 한 분야(고려대 한국어대사전)")
       st.link_button("물리 개념 정리(종료)_HS","https://docs.google.com/document/d/1Hq--M0r059_DK8DVi7FSDuMlbZuf3KcgYEyS9QVIAEM/edit?usp=sharing", use_container_width=True)
   with tab3:
     with st.container(border=True, height=170):
       st.markdown("### 화학")
-      st.caption("물질과 에너지")
+      st.caption("물질의 성질과 구조, 그 생성(生成)과 분해의 반응 및 다른 물질과의 반응을 연구하는 학문(고려대 한국어대사전)")
       st.link_button("화학 개념 정리(중단)_HS", "https://docs.google.com/document/d/1Vg_vugyvchkBi17DqHDL8o216NTWcLOQPBlHBj-R3_0/edit?usp=sharing", use_container_width=True)
   with tab4:
     with st.container(border=True, height=170):
-      st.markdown("### 생명")
-      st.caption("통합과학1, 통합과학2, 생물의 유전")
+      st.markdown("### 생명과학")
+      st.caption("생명에 관계되는 현상을 종합적으로 연구하는 과학(표준국어대사전)")
       st.link_button("생명과학 정리_HS", "https://docs.google.com/document/d/1D6qrxYU7jllv5jtnFGlxYAbMLa0rDQgcxoGWZU5P-pE/edit?usp=sharing", use_container_width=True)
       st.link_button("생물의 유전 '조건 X'문제", "https://docs.google.com/document/d/1re8tg8GgR0f39a1YsslOEHRyS_RaBKt93kwJ-D1uTHM/edit?usp=sharing", use_container_width=True)
   with tab5:
     with st.container(border=True, height=170):
-      st.markdown("### 지구")
-      st.caption("행성우주 과학")
+      st.markdown("### 지구과학")
+      st.caption("지구와 그 주위의 천체를 연구하는 학문(표준국어대사전)")
       st.link_button("지구과학 정리_HS", "https://docs.google.com/document/d/1YOST6DnB_4Dr_jXNPWYKQ8C2EXSWMlUK6Q9_FuhP0Gk/edit?usp=sharing", use_container_width=True)
   with tab6:
     st.caption("아직 자료가 없습니다.")

@@ -27,7 +27,7 @@ def show_main_page():
   
   tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['수학','물리학','화학','생명과학','지구과학','문과 과목','수능 전 임시시간표'])
   
-  st.info("**[공지사항]** 유저 간 소통 페이지 제작 시도중입니다.")
+  st.info("**[업데이트]** 과목별 자료 탭에서, 해당 과목에 대한 랜덤한 캡션이 추가되었습니다.(현재 각 2개)")
   
   col_left, col_right1, col_right2 = st.columns([8,3,5])
 
@@ -43,23 +43,39 @@ def show_main_page():
   with tab2:
     with st.container(border=True, height=170):
       st.markdown("### 물리학")
-      st.caption("자연 현상의 보편적 법칙을 연구하는 자연 과학의 한 분야(고려대 한국어대사전)")
+      physics_list = ["사전 정의는 '자연 현상의 보편적 법칙을 연구하는 자연 과학의 한 분야'이다.",
+                   "양자역학은 태어난 지 약 100년밖에 되지 않았다."
+                  ]
+      physics = random.choice(physics_list)
+      st.caption(f"캡션: {physics}")
       st.link_button("물리 개념 정리(종료)_HS","https://docs.google.com/document/d/1Hq--M0r059_DK8DVi7FSDuMlbZuf3KcgYEyS9QVIAEM/edit?usp=sharing", use_container_width=True)
   with tab3:
     with st.container(border=True, height=170):
       st.markdown("### 화학")
-      st.caption("물질의 성질과 구조, 그 생성(生成)과 분해의 반응 및 다른 물질과의 반응을 연구하는 학문(고려대 한국어대사전)")
+      chemistry_list = ["사전 정의는 '물질의 성질과 구조, 그 생성과 분해의 반응 및 다른 물질과의 반응을 연구하는 학문'이다.",
+                   "헬륨은 1기압에서 절대영도(0K)에서마저도 얼지 않는다."
+                  ]
+      chemistry = random.choice(chemistry_list)
+      st.caption(f"캡션: {chemistry}")    
       st.link_button("화학 개념 정리(중단)_HS", "https://docs.google.com/document/d/1Vg_vugyvchkBi17DqHDL8o216NTWcLOQPBlHBj-R3_0/edit?usp=sharing", use_container_width=True)
   with tab4:
     with st.container(border=True, height=170):
       st.markdown("### 생명과학")
-      st.caption("생명에 관계되는 현상을 종합적으로 연구하는 과학(표준국어대사전)")
+      biology_list = ["사전 정의는 '생명에 관계되는 현상을 종합적으로 연구하는 과학'이다.",
+                   "사람의 미토콘드리아는 AUA를 개시 코돈으로 사용하기도 한다."
+                  ]
+      biology = random.choice(biology_list)
+      st.caption(f"캡션: {biology}")  
       st.link_button("생명과학 정리_HS", "https://docs.google.com/document/d/1D6qrxYU7jllv5jtnFGlxYAbMLa0rDQgcxoGWZU5P-pE/edit?usp=sharing", use_container_width=True)
       st.link_button("생물의 유전 '조건 X'문제", "https://docs.google.com/document/d/1re8tg8GgR0f39a1YsslOEHRyS_RaBKt93kwJ-D1uTHM/edit?usp=sharing", use_container_width=True)
   with tab5:
     with st.container(border=True, height=170):
       st.markdown("### 지구과학")
-      st.caption("지구와 그 주위의 천체를 연구하는 학문(표준국어대사전)")
+      earth_list = ["사전 정의는 '지구와 그 주위의 천체를 연구하는 학문'이다.",
+                   "명왕성의 소행성체 번호는 134340이다."
+                  ]
+      earth = random.choice(earth_list)
+      st.caption(f"캡션: {earth}")
       st.link_button("지구과학 정리_HS", "https://docs.google.com/document/d/1YOST6DnB_4Dr_jXNPWYKQ8C2EXSWMlUK6Q9_FuhP0Gk/edit?usp=sharing", use_container_width=True)
   with tab6:
     st.caption("아직 자료가 없습니다.")

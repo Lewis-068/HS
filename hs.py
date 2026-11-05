@@ -81,7 +81,7 @@ def show_main_page():
     st.caption("아직 자료가 없습니다.")
   with tab7:
     with st.container(border=True, height=280):
-      st.markdown('### 11월 16일 월요일')
+      st.markdown('### 11월 09일 월요일')
       st.caption('주요 수업교체: -')
       with st.expander('1-1 시간표'):
         st.caption('-')

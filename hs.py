@@ -107,7 +107,7 @@ def show_main_page():
       st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽑아 증명.')
     with st.expander('**미적분1** | ???'):
       st.caption('공지된 내용이 없습니다.')
-    with st.expander('**전자기와 양자** | science snack project (11/16~11/18 예상)'):
+    with st.expander('**전자기와 양자** | science snack project (11/12~11/18 예상)'):
       st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")

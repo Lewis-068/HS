@@ -84,11 +84,11 @@ def show_main_page():
       st.markdown('### 11월 09일 월요일')
       st.caption('주요 수업교체: -')
       with st.expander('1-1 시간표'):
-        st.caption('-')
+        st.caption('1교시: 대수(이도환)  \n2교시: 대수(이도환)  \n3교시: 공통영어2(한수진)  \n4교시: 통합사회2(이수인)  \n5교시: 미적분I(김경민)  \n6교시: 생물의 유전(김가인)  \n7교시: 전자기와 양자(송오준)')
       with st.expander('1-2 시간표'):
-        st.caption('-')
+        st.caption('1교시: 행성우주과학(양경석)  \n2교시: 생물의 유전(김가인)  \n3교시: 행성우주과학(양경석)  \n4교시: 화학 반응의 세계(이병일)  \n5교시: 대수(이도환)  \n6교시: 공통국어2(손창원)  \n7교시: 대수(이도환)')
       with st.expander('1-3 시간표'):
-        st.caption('-')
+        st.caption('1교시: 미적분I(김경민)  \n2교시: 행성우주과학(양경석)  \n3교시: 화학 반응의 세계(이병일) \n4교시: 대수(이도환)  \n5교시: 행성우주과학(양경석)  \n6교시: 공통영어2(한수진)  \n7교시: 통합사회2(이수인)')
   
   with col_left:
     st.link_button("이메일 수신 동의/미동의", "https://docs.google.com/forms/d/e/1FAIpQLScJCCfpfFsHKUqPGoQ0PcNHRv3RysKb8nrVF4jmamunX3fHOA/viewform?usp=publish-editor")

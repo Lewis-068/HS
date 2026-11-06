@@ -97,22 +97,6 @@ def show_main_page():
           time(ast, bio, ast, ch, m1, kr, m1)
         with st.expander('1-3 시간표'):
           time(m2, ast, ch, m1, ast, en, s1)
-      with st.container(border=False):
-        st.markdown('### 11월 10일 화요일')
-        with st.expander('1-1 시간표'):
-          st.caption(f'1교시: {m1}  \n2교시: {m1}  \n3교시: {en}  \n4교시: {s1}  \n5교시: {m2}  \n6교시: {bio}  \n7교시: {ph}'))
-        with st.expander('1-2 시간표'):
-          st.caption(f'1교시: {m1}  \n2교시: {m1}  \n3교시: {en}  \n4교시: {s1}  \n5교시: {m2}  \n6교시: {bio}  \n7교시: {ph}')
-        with st.expander('1-3 시간표'):
-          st.caption(f'1교시: {m1}  \n2교시: {m1}  \n3교시: {en}  \n4교시: {s1}  \n5교시: {m2}  \n6교시: {bio}  \n7교시: {ph}')
-      with st.container(border=False):
-        st.markdown('### 11월 11일 수요일')
-        with st.expander('1-1 시간표'):
-          st.caption('1교시: 미적분I(김경민)  \n2교시: 행성우주과학(양경석)  \n3교시: 전자기와 양자(송오준)  \n4교시: 행성우주과학(양경석)  \n5교시: 대수(이도환) \n6교시: 대수(이도환)  \n7교시: 통합사회2(이수인)')
-        with st.expander('1-2 시간표'):
-          st.caption('1교시: 화학 반응의 세계(이병일)  \n2교시: 공통영어2(한수진)  \n3교시: 대수(이도환)  \n4교시: 생물의 유전(김가인)  \n5교시: 미적분I(김경민)  \n6교시: 행성우주과학(양경석)  \n7교시: 공통국어2(손창원)')
-        with st.expander('1-3 시간표'):
-          st.caption('1교시: 생물의 유전(김가인)  \n2교시: 화학 반응의 세계(이병일)  \n3교시: 공통국어2(손창원) \n4교시: 대수(이도환)  \n5교시: 통합사회2(이수인)  \n6교시: 미적분I(김경민)  \n7교시: 통합사회2(성현택)')
   
   with col_left:
     st.link_button("이메일 수신 동의/미동의", "https://docs.google.com/forms/d/e/1FAIpQLScJCCfpfFsHKUqPGoQ0PcNHRv3RysKb8nrVF4jmamunX3fHOA/viewform?usp=publish-editor")

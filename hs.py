@@ -80,9 +80,8 @@ def show_main_page():
   with tab6:
     st.caption("아직 자료가 없습니다.")
   with tab7:
-    with st.container(border=True, height=280):
+    with st.container(border=True, height=250):
       st.markdown('### 11월 09일 월요일')
-      st.caption('주요 수업교체: -')
       with st.expander('1-1 시간표'):
         st.caption('1교시: 대수(이도환)  \n2교시: 대수(이도환)  \n3교시: 공통영어2(한수진)  \n4교시: 통합사회2(이수인)  \n5교시: 미적분I(김경민)  \n6교시: 생물의 유전(김가인)  \n7교시: 전자기와 양자(송오준)')
       with st.expander('1-2 시간표'):

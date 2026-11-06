@@ -82,7 +82,7 @@ def show_main_page():
   with tab7:
     with st.container(border=True, height=250):
       m1, m2, ph, ch, bio, ast, kr, s1, s2, en, pe, w = '대수(이도환)', '미적분I(김경민)', '전자기와 양자(송오준)', '화학 반응의 세계(이병일)', '생물의 유전(김가인)', '행성우주과학(양경석)', '공통국어2(손창원)', '통합사회2(이수인)', '통합사회2(성현택)', '공통영어2(한수진)', '체육2(최현호)', '자율/창체'
-      def suject_time(a,b,c,d,e,f,g):
+      def subject_time(a,b,c,d,e,f,g):
         n = 0
         list = [a,b,c,d,e,f,g]
         while n >= 7:

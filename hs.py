@@ -25,7 +25,7 @@ def show_main_page():
   with drive:
     st.link_button("공유 드라이브","https://drive.google.com/drive/folders/0AGBBqhm2jLp4Uk9PVA?hl=ko")
   
-  tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['수학','물리학','화학','생명과학','지구과학','문과 과목','수능 전 임시시간표'])
+  tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['수학','물리학','화학','생명과학','지구과학','문과 과목','임시시간표'])
   
   st.info("**[공지사항]** 임시시간표 작업중입니다.")
   
@@ -185,6 +185,66 @@ def show_main_page():
         with c:
           with st.expander('1-3 시간표'):
             subject_time(kr, s1, kr, ph, s1, ph, w)
+      with st.container(border=False):
+        st.markdown('### 11월 23일 월요일')
+        a, b, c = st.columns(3)
+        with a:
+          with st.expander('1-1 시간표'):
+            subject_time(m1, s2, en, s1, m2, bio, ph)
+        with b:
+          with st.expander('1-2 시간표'):
+            subject_time(ast, ch, ph, ch, en, m1, m2)
+        with c:
+          with st.expander('1-3 시간표'):
+            subject_time(m2, ph, ch, m1, ast, en, s1)
+      with st.container(border=False):
+        st.markdown('### 11월 10일 화요일')
+        a, b, c = st.columns(3)
+        with a:
+          with st.expander('1-1 시간표'):
+            subject_time(m1, bio, ch, ast, ph, kr, pe)
+        with b:
+          with st.expander('1-2 시간표'):
+            subject_time(ch, pe, kr, m2, s1, bio, ph)
+        with c:
+          with st.expander('1-3 시간표'):
+            subject_time(ph, ch, ast, pe, kr, m1, m2)
+      with st.container(border=False):
+        st.markdown('### 11월 25일 수요일')
+        a, b, c = st.columns(3)
+        with a:
+          with st.expander('1-1 시간표'):
+            subject_time(m2, kr, ph, ast, m1, en, ch)
+        with b:
+          with st.expander('1-2 시간표'):
+            subject_time(ch, en, m1, bio, m2, ast, kr)
+        with c:
+          with st.expander('1-3 시간표'):
+            subject_time(bio, ch, ch, ph, ch, m2, s2)
+      with st.container(border=False):
+        st.markdown('### 11월 26일 목요일')
+        a, b, c = st.columns(3)
+        with a:
+          with st.expander('1-1 시간표'):
+            subject_time(ph, kr, bio, en, ch, m2, ast)
+        with b:
+          with st.expander('1-2 시간표'):
+            subject_time(en, s1, kr, m2, ph, pe, ch)
+        with c:
+          with st.expander('1-3 시간표'):
+            subject_time(ast, ph, m2, m1, bio, en, pe)
+      with st.container(border=False):
+        st.markdown('### 11월 27일 금요일')
+        a, b, c = st.columns(3)
+        with a:
+          with st.expander('1-1 시간표'):
+            subject_time(w, ch, pe, m2, w, w, x)
+        with b:
+          with st.expander('1-2 시간표'):
+            subject_time(w, ph, ast, m1, w, w, x)
+        with c:
+          with st.expander('1-3 시간표'):
+            subject_time(w, kr, en, ch, w, w, x)
         
   
   with col_left:

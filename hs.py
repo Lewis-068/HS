@@ -94,7 +94,7 @@ def show_main_page():
         with st.expander('1-1 시간표'):
           subject_time(m1, m1, en, s1, m2, bio, ph)
           list = [m1, m1, en, s1, m2, bio, ph]
-        while n >= 7:
+        while n < 7:
           subject = list[n]
           n += 1
           st.caption(f'{n}교시: {subject}')

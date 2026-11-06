@@ -81,7 +81,7 @@ def show_main_page():
     st.caption("아직 자료가 없습니다.")
   with tab7:
     with st.container(border=True, height=250):
-      m1, m2, ph, ch, bio, ast, kr, s1, s2, en, pe, w = '대수(이도환)', '미적분I(김경민)', '전자기와 양자(송오준)', '화학반응의 세계(이병일)', '생물의 유전(김가인)', '행성우주과학(양경석)', '공통국어2(손창원)', '통합사회2(이수인)', '통합사회2(성현택)', '공통영어2(한수진)', '체육2(최현호)', '자율/창체'
+      m1, m2, ph, ch, bio, ast, kr, s1, s2, en, pe, w, x = '대수(이도환)', '미적분I(김경민)', '전자기와 양자(송오준)', '화학반응의 세계(이병일)', '생물의 유전(김가인)', '행성우주과학(양경석)', '공통국어2(손창원)', '통합사회2(이수인)', '통합사회2(성현택)', '공통영어2(한수진)', '체육2(최현호)', '자율/창체', '.'
       def subject_time(a,b,c,d,e,f,g):
         n = 0
         list = [a,b,c,d,e,f,g]
@@ -101,6 +101,91 @@ def show_main_page():
         with c:
           with st.expander('1-3 시간표'):
             subject_time(m2, ast, ch, m1, ast, en, s1)
+      with st.container(border=False):
+        st.markdown('### 11월 10일 화요일')
+        a, b, c = st.columns(3)
+        with a:
+          with st.expander('1-1 시간표'):
+            subject_time(m1, bio, ch, ast, ast, kr, pe)
+        with b:
+          with st.expander('1-2 시간표'):
+            subject_time(ast, pe, m1, m2, s1, ph, en)
+        with c:
+          with st.expander('1-3 시간표'):
+            subject_time(ch, ast, ast, pe, kr, m1, m2)
+      with st.container(border=False):
+        st.markdown('### 11월 11일 수요일')
+        a, b, c = st.columns(3)
+        with a:
+          with st.expander('1-1 시간표'):
+            subject_time(m2, ast, ph, ast, m1, m2, s1)
+        with b:
+          with st.expander('1-2 시간표'):
+            subject_time(ch, en, m1, bio, m2, ast, kr)
+        with c:
+          with st.expander('1-3 시간표'):
+            subject_time(bio, ch, kr, m1, s1, m2, s2)
+      with st.container(border=False):
+        st.markdown('### 11월 12일 목요일')
+        a, b, c = st.columns(3)
+        with a:
+          with st.expander('1-1 시간표'):
+            subject_time(m1, kr, bio, en, ch, m2, ast)
+        with b:
+          with st.expander('1-2 시간표'):
+            subject_time(bio, bio, kr, m2, ph, pe, ch)
+        with c:
+          with st.expander('1-3 시간표'):
+            subject_time(ast, ph, m2, kr, bio, m1, pe)
+      with st.container(border=False):
+        st.markdown('### 11월 13일 금요일')
+        a, b, c = st.columns(3)
+        with a:
+          with st.expander('1-1 시간표'):
+            subject_time(w, ch, pe, m2, w, w, x)
+        with b:
+          with st.expander('1-2 시간표'):
+            subject_time(w, ph, ast, m1, w, w, x)
+        with c:
+          with st.expander('1-3 시간표'):
+            subject_time(w, m1, en, bio, w, w, x)
+      with st.container(border=False):
+        st.markdown('### 11월 16일 월요일')
+        a, b, c = st.columns(3)
+        with a:
+          with st.expander('1-1 시간표'):
+            subject_time(s2, s2, en, s1, m2, bio, ph)
+        with b:
+          with st.expander('1-2 시간표'):
+            subject_time(ph, bio, ph, bio, en, m2, m2)
+        with c:
+          with st.expander('1-3 시간표'):
+            subject_time(m2, ph, bio, en, ph, en, s1)
+      with st.container(border=False):
+        st.markdown('### 11월 17일 화요일')
+        a, b, c = st.columns(3)
+        with a:
+          with st.expander('1-1 시간표'):
+            subject_time(ph, bio, s1, ph, m2, kr, pe)
+        with b:
+          with st.expander('1-2 시간표'):
+            subject_time(s2, s2, kr, m2, s1, m2, bio)
+        with c:
+          with st.expander('1-3 시간표'):
+            subject_time(kr, m2, ph, pe, bio, ph, m2)
+      with st.container(border=False):
+        st.markdown('### 11월 18일 수요일')
+        a, b, c = st.columns(3)
+        with a:
+          with st.expander('1-1 시간표'):
+            subject_time(ph, kr, ph, kr, en, en, w)
+        with b:
+          with st.expander('1-2 시간표'):
+            subject_time(pe, en, en, s2, ph, s1, w)
+        with c:
+          with st.expander('1-3 시간표'):
+            subject_time(kr, s1, kr, ph, s1, ph, w)
+        
   
   with col_left:
     st.link_button("이메일 수신 동의/미동의", "https://docs.google.com/forms/d/e/1FAIpQLScJCCfpfFsHKUqPGoQ0PcNHRv3RysKb8nrVF4jmamunX3fHOA/viewform?usp=publish-editor")

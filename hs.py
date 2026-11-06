@@ -118,7 +118,7 @@ def show_main_page():
         a, b, c = st.columns(3)
         with a:
           with st.expander('1-1 시간표'):
-            subject_time(m2, ast, ph, ast, m1, m2, s1)
+            subject_time(m2, ast, ph, ast, m1, m1, s1)
         with b:
           with st.expander('1-2 시간표'):
             subject_time(ch, en, m1, bio, m2, ast, kr)

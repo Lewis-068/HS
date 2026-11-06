@@ -93,6 +93,11 @@ def show_main_page():
         st.markdown('### 11월 09일 월요일')
         with st.expander('1-1 시간표'):
           subject_time(m1, m1, en, s1, m2, bio, ph)
+          list = [m1, m1, en, s1, m2, bio, ph]
+        while n >= 7:
+          subject = list[n]
+          n += 1
+          st.caption(f'{n}교시: {subject}')
         with st.expander('1-2 시간표'):
           subject_time(ast, bio, ast, ch, m1, kr, m1)
         with st.expander('1-3 시간표'):

@@ -27,7 +27,7 @@ def show_main_page():
   
   tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['수학','물리학','화학','생명과학','지구과학','문과 과목','수능 전 임시시간표'])
   
-  st.info("**[업데이트]** 과목별 자료 탭에서, 해당 과목에 대한 랜덤한 캡션이 추가되었습니다.(현재 각 2개)")
+  st.info("**[업데이트]** 임시시간표 작업중입니다.")
   
   col_left, col_right1, col_right2 = st.columns([8,3,5])
 

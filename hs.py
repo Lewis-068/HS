@@ -1,6 +1,18 @@
 import streamlit as st
 import pandas as pd
 import random
+from streamlit_cookies_controller import CookieController
+
+controller = CookieController()
+
+device_id = controller.get("device_id")
+
+if not device_id:
+    if "device_id_temp" not in st.session_state:
+        st.session_state['device_id_temp'] = str(uuid.uuid4())
+        controller.set("device_id", st.session_state['device_id_temp'])
+        
+    device_id = st.session_state['device_id_temp']
 
 hide_streamlit_style = """
     <style>
@@ -16,15 +28,18 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.set_page_config(page_title="34기 학술 자료 사이트_HS")
 
 if 'page' not in st.session_state:
-  st.session_state['page'] = 'main'
+    st.session_state['page'] = 'main'
 if 'email' not in st.session_state:
-  st.session_state['email'] = None
+    st.session_state['email'] = None
+df = pd.read_csv("https://docs.google.com/spreadsheets/d/128Ftqx_rkdfG4L7CFK3abZ6S4cLFcy3L6Wx7QijbnfE/edit?usp=sharing")
+if 'nickname' not in st.session_state:
+    st.session_state['nickname'] = None
 if st.session_state['page'] != 'blackjack' and 'dealer' in st.session_state:
-  del st.session_state['dealer']
+    del st.session_state['dealer']
 if st.session_state['page'] != 'blackjack' and 'player' in st.session_state:
-  del st.session_state['player']
+    del st.session_state['player']
 if st.session_state['page'] != 'blackjack' and 'rate' in st.session_state:
-  del st.session_state['rate']
+    del st.session_state['rate']
 
 
 
@@ -397,6 +412,13 @@ def show_suggest_page():
   if st.button("돌아가기"):
     st.session_state['page'] = 'main'
     st.rerun()
+
+def show_nickname_page():
+    st.title("자유 채팅방 닉네임 설정")
+    nickname = st.session_state['nackname']
+    st.caption(f"
+
+
 
 def show_suggest_record_page():
   st.title("**34기 학술 자료 사이트_HS**")

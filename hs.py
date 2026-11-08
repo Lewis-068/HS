@@ -27,7 +27,7 @@ def show_main_page():
   
   tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['수학','물리학','화학','생명과학','지구과학','문과 과목','임시시간표'])
   
-  st.info("**[공지사항]** 만족도 조사 참여 부탁드립니다. https://docs.google.com/forms/d/e/1FAIpQLSfHrCrqEwMQ5xToO81F1K0VgOIxZjk9hB3O_mkfKnteqddxdg/viewform?usp=dialog")
+  st.info("**[공지사항]** 34기 학술 자료 사이트입니다.")
   
   col_left, col_right1, col_right2 = st.columns([8,3,5])
 

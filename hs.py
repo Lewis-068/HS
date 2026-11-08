@@ -2,6 +2,17 @@ import streamlit as st
 import pandas as pd
 import random
 
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    [data-testid="stToolbar"] {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
 st.set_page_config(page_title="34기 학술 자료 사이트_HS")
 
 if 'page' not in st.session_state:

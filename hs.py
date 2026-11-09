@@ -1,3 +1,4 @@
+import gspread
 import uuid
 import streamlit as st
 import pandas as pd
@@ -32,7 +33,11 @@ if 'page' not in st.session_state:
     st.session_state['page'] = 'main'
 if 'email' not in st.session_state:
     st.session_state['email'] = None
-df = pd.read_csv("https://docs.google.com/spreadsheets/d/128Ftqx_rkdfG4L7CFK3abZ6S4cLFcy3L6Wx7QijbnfE/export?format=csv")
+gc = gspread.service_account_from_dict(st.secrets["gcp_service_account"])
+sh = gc.open_by_key("128Ftqx_rkdfG4L7CFK3abZ6S4cLFcy3L6Wx7QijbnfE")
+worksheet = sh.get_worksheet(0)
+data = worksheet.get_all_records()
+df = pd.DataFrame(data)
 if 'nickname' not in st.session_state:
     st.session_state['nickname'] = None
 if st.session_state['page'] != 'blackjack' and 'dealer' in st.session_state:

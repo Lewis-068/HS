@@ -302,8 +302,6 @@ def show_main_page():
       st.caption('공지된 내용이 없습니다.')
     with st.expander('**통합사회2** | 생애 주기별 금융 생활 설계'):
       st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계')
-    with st.expander('**공통영어2** | 말하기(11/09 월요일)'):
-      st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
   with tabb:
     with st.expander('**대수** | 증명(날짜 미정)'):
@@ -322,8 +320,6 @@ def show_main_page():
       st.caption('공지된 내용이 없습니다.')
     with st.expander('**통합사회2** | 생애 주기별 금융 생활 설계'):
       st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계')
-    with st.expander('**공통영어2** | 말하기(11/09 월요일)'):
-      st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
   with tabc:
     with st.expander('**대수** | 증명(날짜 미정)'):
@@ -342,8 +338,6 @@ def show_main_page():
       st.caption('공지된 내용이 없습니다.')
     with st.expander('**통합사회2** | 생애 주기별 금융 생활 설계'):
       st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계')
-    with st.expander('**공통영어2** | 말하기(11/09 월요일)'):
-      st.caption('내용: 제시된 두 그림에서 다른 부분을 짝과 함께 영어로 추론.')
 
   with tabd:
     with st.expander('**대수** | 11. 사인 법칙과 코사인 법칙 ~ 16. 수학적 귀납법 + 학습지'):
@@ -363,7 +357,7 @@ def show_main_page():
     with st.expander('**통합사회2** | III 시장경제와 지속가능발전 3. 금융 자산과 금융 관리 ~ V. 미래와 지속가능한 삶'):
       st.caption("-")
     with st.expander('**공통영어2** | 2025학년도 10월 고1 영어 모의고사 + 2026학년도 10월 고1 영어 모의고사 + 수업 프린트'):
-      st.caption("지문 범위는 11/02 ~ 11/06 중으로 배부.")
+      st.caption("-")
 
   
   text, _, button = st.columns([2, 7, 2])

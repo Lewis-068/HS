@@ -32,7 +32,7 @@ if 'page' not in st.session_state:
     st.session_state['page'] = 'main'
 if 'email' not in st.session_state:
     st.session_state['email'] = None
-df = pd.read_csv("https://docs.google.com/spreadsheets/d/128Ftqx_rkdfG4L7CFK3abZ6S4cLFcy3L6Wx7QijbnfE/edit?usp=sharing")
+df = pd.read_csv("https://docs.google.com/spreadsheets/d/128Ftqx_rkdfG4L7CFK3abZ6S4cLFcy3L6Wx7QijbnfE/export?format=csv")
 if 'nickname' not in st.session_state:
     st.session_state['nickname'] = None
 if st.session_state['page'] != 'blackjack' and 'dealer' in st.session_state:

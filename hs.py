@@ -132,7 +132,7 @@ def show_main_page():
         a, b, c = st.columns(3)
         with a:
           with st.expander('1-1 시간표'):
-            subject_time(m1, bio, ch, ast, ast, kr, pe)
+            subject_time(m1, bio, ch, ast, ast, m2, pe)
         with b:
           with st.expander('1-2 시간표'):
             subject_time(ast, pe, m1, m2, s1, ph, en)
@@ -156,7 +156,7 @@ def show_main_page():
         a, b, c = st.columns(3)
         with a:
           with st.expander('1-1 시간표'):
-            subject_time(m1, kr, bio, en, ch, m2, ast)
+            subject_time(m1, kr, bio, en, ch, kr, ast)
         with b:
           with st.expander('1-2 시간표'):
             subject_time(bio, bio, kr, m2, ph, pe, ch)
@@ -290,7 +290,7 @@ def show_main_page():
       st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽑아 증명.')
     with st.expander('**미적분1** | 도함수를 이용한 실생활 다항함수 모델링 및 방정식, 부등식 문제 제작 및 해결 (11/09 ~11/11 3차시)'):
       st.caption('실생활에서 나타나는 현상을 함수로 모델링하고 분석함.  \n도함수를 이용해 그래프 개형을 그림.  \n이를 통해 방정식, 부등식을 제작하고 해결하여 결론 도달  \n필요한 데이터는 미리 출력해오며, 전자기기 사용 불가')
-    with st.expander('**전자기와 양자** | science snack project (11/12~11/18 예상)'):
+    with st.expander('**전자기와 양자** | science snack project (11/16~11/18 예상)'):
       st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
@@ -310,7 +310,7 @@ def show_main_page():
       st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽑아 증명.')
     with st.expander('**미적분1** | 도함수를 이용한 실생활 다항함수 모델링 및 방정식, 부등식 문제 제작 및 해결(11/09 ~11/11 3차시)'):
       st.caption('실생활에서 나타나는 현상을 함수로 모델링하고 분석함.  \n도함수를 이용해 그래프 개형을 그림.  \n이를 통해 방정식, 부등식을 제작하고 해결하여 결론 도달  \n필요한 데이터는 미리 출력해오며, 전자기기 사용 불가')
-    with st.expander('**전자기와 양자** | science snack project (11/16~11/18 예상)'):
+    with st.expander('**전자기와 양자** | science snack project (11/12~11/18 예상)'):
       st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")

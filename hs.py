@@ -398,7 +398,6 @@ def show_suggest_page():
 def show_nickname_page():
     st.title("자유 채팅방 닉네임 설정")
     nickname = st.session_state['nackname']
-    st.caption(f"
 
 
 

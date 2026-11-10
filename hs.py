@@ -59,7 +59,7 @@ def show_main_page():
   
   tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['수학','물리학','화학','생명과학','지구과학','문과 과목','임시시간표'])
   
-  st.info("**[공지사항]** 34기 학술 자료 사이트입니다.")
+  st.info("**[공지사항]** 이번 화학 범위는 암기 부담이 커 우선적으로 정리합니다.")
   
   col_left, col_right1, col_right2 = st.columns([8,3,5])
 
@@ -89,7 +89,7 @@ def show_main_page():
                   ]
       chemistry = random.choice(chemistry_list)
       st.caption(f"캡션: {chemistry}")    
-      st.link_button("화학 개념 정리(중단)_HS", "https://docs.google.com/document/d/1Vg_vugyvchkBi17DqHDL8o216NTWcLOQPBlHBj-R3_0/edit?usp=sharing", use_container_width=True)
+      st.link_button("화학 개념 정리_HS", "https://docs.google.com/document/d/1Vg_vugyvchkBi17DqHDL8o216NTWcLOQPBlHBj-R3_0/edit?usp=sharing", use_container_width=True)
   with tab4:
     with st.container(border=True, height=170):
       st.markdown("### 생명과학")

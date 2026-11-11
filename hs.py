@@ -271,7 +271,7 @@ def show_main_page():
     with st.expander('**대수** | 증명(11/23 월요일 1교시 예상)'):
       st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽑아 증명.')
     with st.expander('**전자기와 양자** | science snack project (11/16~11/18 예상)'):
-      st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정  \n[Science Snacks](https://www.exploratorium.edu/snacks)   [물품요구서](https://docs.google.com/spreadsheets/d/1P22DDP44r_UK1PyOPlBiCP61xuDPcFhyMWLixMCDMHo/edit?gid=512152481#gid=512152481)')
+      st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정  \n[Science Snacks](https://www.exploratorium.edu/snacks) [물품요구서](https://docs.google.com/spreadsheets/d/1P22DDP44r_UK1PyOPlBiCP61xuDPcFhyMWLixMCDMHo/edit?gid=512152481#gid=512152481) [드라이브](https://drive.google.com/drive/folders/17WMvKSY25A_fe2McTtDOagUsPhuWA8Lz)')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):

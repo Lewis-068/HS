@@ -289,7 +289,7 @@ def show_main_page():
     with st.expander('**미적분1** | 도함수를 이용한 실생활 다항함수 모델링 및 방정식, 부등식 문제 제작 및 해결(11/09 ~11/11 3차시)'):
       st.caption('실생활에서 나타나는 현상을 함수로 모델링하고 분석함.  \n도함수를 이용해 그래프 개형을 그림.  \n이를 통해 방정식, 부등식을 제작하고 해결하여 결론 도달  \n필요한 데이터는 미리 출력해오며, 전자기기 사용 불가')
     with st.expander('**전자기와 양자** | science snack project (11/12~11/18 예상)'):
-      st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정')
+      st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정  \n[Science Snacks](https://www.exploratorium.edu/snacks) [물품요구서](https://docs.google.com/spreadsheets/d/1P22DDP44r_UK1PyOPlBiCP61xuDPcFhyMWLixMCDMHo/edit?gid=512152481#gid=512152481) [Drive](https://drive.google.com/drive/folders/17WMvKSY25A_fe2McTtDOagUsPhuWA8Lz)')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
@@ -297,7 +297,7 @@ def show_main_page():
     with st.expander('**생물의 유전** | 질문 노트(진행중 - 심층탐구)'):
       st.caption('심층탐구 보고서 마감: 11/23 (월)  \n1차시: 평가 안내 및 작성했던 질문노트에서 주제 찾기  \n2차시: 개별 탐구  \n3차시: 보고서 작성  \n4차시: 발표 준비  \n5~8자리: 발표 진행')
     with st.expander('**행성우주과학** | 보고서 (제출 마감: 11/22 24시)'):
-      st.caption('내용: 기본 자료를 바탕으로 자율적으로 주제를 정해서 분석하는 보고서 작성.  \n주는 자료가 기본이지만 능력껏 추가 가능.  \n변별보다는 성실성을 보며, 과세특 반영  \n보고서 양식 맞춰서 10페이지 이상  \n기한 늦거나 / 어디서 베끼거나 / AI 딸깍 시 감점.')
+      st.caption('내용: 기본 자료를 바탕으로 자율적으로 주제를 정해서 분석하는 보고서 작성.  \n주는 자료가 기본이지만 능력껏 추가 가능.  \n변별보다는 성실성을 보며, 과세특 반영  \n보고서 양식 맞춰서 10페이지 이상  \n기한 늦거나 / 어디서 베끼거나 / AI 딸깍 시 감점.  \n[Drive](https://drive.google.com/drive/folders/1_ZQgkQAgPAc4_A7OseOPocDbcISoSCB0?usp=drive_link)')
     with st.expander('**통합사회2** | 생애 주기별 금융 생활 설계'):
       st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계')
 
@@ -307,7 +307,7 @@ def show_main_page():
     with st.expander('**미적분1** | 도함수를 이용한 실생활 다항함수 모델링 및 방정식, 부등식 문제 제작 및 해결(11/09 ~11/11 3차시)'):
       st.caption('실생활에서 나타나는 현상을 함수로 모델링하고 분석함.  \n도함수를 이용해 그래프 개형을 그림.  \n이를 통해 방정식, 부등식을 제작하고 해결하여 결론 도달  \n필요한 데이터는 미리 출력해오며, 전자기기 사용 불가')
     with st.expander('**전자기와 양자** | science snack project (11/16~11/18 예상)'):
-      st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정')
+      st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정  \n[Science Snacks](https://www.exploratorium.edu/snacks) [물품요구서](https://docs.google.com/spreadsheets/d/1P22DDP44r_UK1PyOPlBiCP61xuDPcFhyMWLixMCDMHo/edit?gid=512152481#gid=512152481) [Drive](https://drive.google.com/drive/folders/17WMvKSY25A_fe2McTtDOagUsPhuWA8Lz)')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
@@ -315,7 +315,7 @@ def show_main_page():
     with st.expander('**생물의 유전** | 질문 노트(진행중 - 심층탐구)'):
       st.caption('심층탐구 보고서 마감: 11/23 (월)  \n1차시: 평가 안내 및 작성했던 질문노트에서 주제 찾기  \n2차시: 개별 탐구  \n3차시: 보고서 작성  \n4차시: 발표 준비  \n5~8자리: 발표 진행')
     with st.expander('**행성우주과학** | 보고서 (제출 마감: 11/22 24시)'):
-      st.caption('내용: 기본 자료를 바탕으로 자율적으로 주제를 정해서 분석하는 보고서 작성.  \n주는 자료가 기본이지만 능력껏 추가 가능.  \n변별보다는 성실성을 보며, 과세특 반영  \n보고서 양식 맞춰서 10페이지 이상  \n기한 늦거나 / 어디서 베끼거나 / AI 딸깍 시 감점.')
+      st.caption('내용: 기본 자료를 바탕으로 자율적으로 주제를 정해서 분석하는 보고서 작성.  \n주는 자료가 기본이지만 능력껏 추가 가능.  \n변별보다는 성실성을 보며, 과세특 반영  \n보고서 양식 맞춰서 10페이지 이상  \n기한 늦거나 / 어디서 베끼거나 / AI 딸깍 시 감점.  \n[Drive](https://drive.google.com/drive/folders/1_ZQgkQAgPAc4_A7OseOPocDbcISoSCB0?usp=drive_link)')
     with st.expander('**통합사회2** | 생애 주기별 금융 생활 설계'):
       st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계')
 

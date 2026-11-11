@@ -59,7 +59,7 @@ def show_main_page():
   
   tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['수학','물리학','화학','생명과학','지구과학','문과 과목','임시시간표'])
   
-  st.info("**[공지사항]** 이번 화학 범위는 암기 부담이 커 우선적으로 정리합니다.")
+  st.info("**[업데이트]** 각 수행평가 설명 아래에 관련 링크가 추가되었습니다.")
   
   col_left, col_right1, col_right2 = st.columns([8,3,5])
 
@@ -271,7 +271,7 @@ def show_main_page():
     with st.expander('**대수** | 증명(11/23 월요일 1교시 예상)'):
       st.caption('문항 사전 공지 예정. 30~50개 중 반 별 랜덤으로 10개를 뽑아 증명.')
     with st.expander('**전자기와 양자** | science snack project (11/16~11/18 예상)'):
-      st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정')
+      st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정  \n[Science Snacks](https://www.exploratorium.edu/snacks)   [물품요구서](https://docs.google.com/spreadsheets/d/1P22DDP44r_UK1PyOPlBiCP61xuDPcFhyMWLixMCDMHo/edit?gid=512152481#gid=512152481)')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):

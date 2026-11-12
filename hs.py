@@ -122,18 +122,6 @@ def show_main_page():
           n += 1
           st.caption(f'{n}교시: {subject}')
       with st.container(border=False):
-        st.markdown('### 11월 12일 목요일')
-        a, b, c = st.columns(3)
-        with a:
-          with st.expander('1-1 시간표'):
-            subject_time(ch, kr, bio, en, ast, kr,m1, ph)
-        with b:
-          with st.expander('1-2 시간표'):
-            subject_time(bio, bio, kr, m2, ph, pe, ch, m1)
-        with c:
-          with st.expander('1-3 시간표'):
-            subject_time(ast, ph, m2, kr, bio, m1, pe, m2)
-      with st.container(border=False):
         st.markdown('### 11월 13일 금요일')
         a, b, c = st.columns(3)
         with a:

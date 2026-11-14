@@ -257,7 +257,7 @@ def show_main_page():
     with st.expander('**행성우주과학** | 보고서 (제출 마감: 11/22 24시)'):
       st.caption('내용: 기본 자료를 바탕으로 자율적으로 주제를 정해서 분석하는 보고서 작성.  \n주는 자료가 기본이지만 능력껏 추가 가능.  \n변별보다는 성실성을 보며, 과세특 반영  \n보고서 양식 맞춰서 10페이지 이상  \n기한 늦거나 / 어디서 베끼거나 / AI 딸깍 시 감점.  \n[Drive](https://drive.google.com/drive/folders/1_ZQgkQAgPAc4_A7OseOPocDbcISoSCB0?usp=drive_link)')
     with st.expander('**통합사회2** | 거시적 요인을 고려한 금융 의사결정 (제출 마감: 11/17)'):
-      st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계')
+      st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계  \[link](https://drive.google.com/file/d/1a9pd614na64JzT6RH7ob4ixH_jlZRONt/view)')
     
   with tabb:
     with st.expander('**대수** | 논증(날짜 미정)'):
@@ -273,7 +273,7 @@ def show_main_page():
     with st.expander('**행성우주과학** | 보고서 (제출 마감: 11/22 24시)'):
       st.caption('내용: 기본 자료를 바탕으로 자율적으로 주제를 정해서 분석하는 보고서 작성.  \n주는 자료가 기본이지만 능력껏 추가 가능.  \n변별보다는 성실성을 보며, 과세특 반영  \n보고서 양식 맞춰서 10페이지 이상  \n기한 늦거나 / 어디서 베끼거나 / AI 딸깍 시 감점.  \n[Drive](https://drive.google.com/drive/folders/1_ZQgkQAgPAc4_A7OseOPocDbcISoSCB0?usp=drive_link)')
     with st.expander('**통합사회2** | 거시적 요인을 고려한 금융 의사결정 (제출 마감: 11/17)'):
-      st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계')
+      st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계  \n[link](https://drive.google.com/file/d/1a9pd614na64JzT6RH7ob4ixH_jlZRONt/view)')
 
   with tabc:
     with st.expander('**대수** | 논증(날짜 미정)'):
@@ -288,7 +288,7 @@ def show_main_page():
       st.caption('심층탐구 보고서 마감: 11/23 (월)  \n1차시: 평가 안내 및 작성했던 질문노트에서 주제 찾기  \n2차시: 개별 탐구  \n3차시: 보고서 작성  \n4차시: 발표 준비  \n5~8자리: 발표 진행')
     with st.expander('**행성우주과학** | 보고서 (제출 마감: 11/22 24시)'):
       st.caption('내용: 기본 자료를 바탕으로 자율적으로 주제를 정해서 분석하는 보고서 작성.  \n주는 자료가 기본이지만 능력껏 추가 가능.  \n변별보다는 성실성을 보며, 과세특 반영  \n보고서 양식 맞춰서 10페이지 이상  \n기한 늦거나 / 어디서 베끼거나 / AI 딸깍 시 감점.  \n[Drive](https://drive.google.com/drive/folders/1_ZQgkQAgPAc4_A7OseOPocDbcISoSCB0?usp=drive_link)')
-    with st.expander('**통합사회2** | 거시적 요인을 고려한 금융 의사결정 (제출 마감: 11/17)'):
+    with st.expander('**통합사회2** | 거시적 요인을 고려한 금융 의사결정 (제출 마감: 11/17)  \n[link](https://drive.google.com/file/d/1a9pd614na64JzT6RH7ob4ixH_jlZRONt/view)'):
       st.caption('내용: 여러가지 거시적인 사건 변화들을 보고, 생애 주기에 따라 금융 생활을 설계')
     
 

@@ -210,7 +210,7 @@ def show_main_page():
   with taba:
     with st.expander('**대수** | 논증(11/23 월요일 1교시 예상)'):
       st.caption('문항 30개 중 10개가 선별된 문항지를 랜덤으로 뽑음.')
-    with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
+    with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~12/14)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
       st.caption("어떤 문제에 도움이 되는 탄소 화합물 구조를 만들어 제안서를 작성함.  \n논문 자료를 종합한 후, AI에게 '이러한 문제를 해결할 수 있는 탄소화합물을 설계해줘' 식의 프롬포트 작성.  \n사전 논문을 얼마나 때려박냐에 따라 정확도, 가치 달라짐")
@@ -218,13 +218,15 @@ def show_main_page():
       st.caption('심층탐구 보고서 마감: 11/23 (월)  \n4차시 마감: 11/23(월)')
     with st.expander('**행성우주과학** | 보고서 (제출 마감: 11/22 24시)'):
       st.caption('내용: 기본 자료를 바탕으로 자율적으로 주제를 정해서 분석하는 보고서 작성.  \n주는 자료가 기본이지만 능력껏 추가 가능.  \n변별보다는 성실성을 보며, 과세특 반영  \n보고서 양식 맞춰서 10페이지 이상  \n기한 늦거나 / 어디서 베끼거나 / AI 딸깍 시 감점.  \n[Drive](https://drive.google.com/drive/folders/1_ZQgkQAgPAc4_A7OseOPocDbcISoSCB0?usp=drive_link)')
+    with st.expander('**통합사회2** | 거시적 요인을 고려한 금융 의사결정(~11/20 자정)'):
+      st.caption('34기 통합사회(1-1) 클래스룸 기준')
     
   with tabb:
     with st.expander('**대수** | 논증(날짜 미정)'):
       st.caption('문항 30개 중 10개가 선별된 문항지를 랜덤으로 뽑음.')
     with st.expander('**전자기와 양자** | science snack project (11/12~11/18 예상)'):
       st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정  \n[Science Snacks](https://www.exploratorium.edu/snacks) [물품요구서](https://docs.google.com/spreadsheets/d/1P22DDP44r_UK1PyOPlBiCP61xuDPcFhyMWLixMCDMHo/edit?gid=512152481#gid=512152481) [Drive](https://drive.google.com/drive/folders/17WMvKSY25A_fe2McTtDOagUsPhuWA8Lz)')
-    with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
+    with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~12/14)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
       st.caption("어떤 문제에 도움이 되는 탄소 화합물 구조를 만들어 제안서를 작성함.  \n논문 자료를 종합한 후, AI에게 '이러한 문제를 해결할 수 있는 탄소화합물을 설계해줘' 식의 프롬포트 작성.  \n사전 논문을 얼마나 때려박냐에 따라 정확도, 가치 달라짐")
@@ -232,13 +234,15 @@ def show_main_page():
       st.caption('심층탐구 보고서 마감: 11/23 (월)  \n4차시 마감: 11/23(월)')
     with st.expander('**행성우주과학** | 보고서 (제출 마감: 11/22 24시)'):
       st.caption('내용: 기본 자료를 바탕으로 자율적으로 주제를 정해서 분석하는 보고서 작성.  \n주는 자료가 기본이지만 능력껏 추가 가능.  \n변별보다는 성실성을 보며, 과세특 반영  \n보고서 양식 맞춰서 10페이지 이상  \n기한 늦거나 / 어디서 베끼거나 / AI 딸깍 시 감점.  \n[Drive](https://drive.google.com/drive/folders/1_ZQgkQAgPAc4_A7OseOPocDbcISoSCB0?usp=drive_link)')
-
+    with st.expander('**통합사회2** | 거시적 요인을 고려한 금융 의사결정(~??/??)'):
+      st.caption('34기 통합사회(1-2) 클래스룸 기준(..으로 누군가 알려주면 좋겠다ㅎ)')
+    
   with tabc:
-    with st.expander('**대수** | 논증(날짜 미정)'):
+    with st.expander('**대수** | 논증(11/25 수요일)'):
       st.caption('문항 30개 중 10개가 선별된 문항지를 랜덤으로 뽑음.')
     with st.expander('**전자기와 양자** | science snack project (11/16~11/18 예상)'):
       st.caption('제작 세 차시, 발표 두 차시.  \n해당 주는 수업 교체로 인해 전자기와 양자 수업이 많아질 예정  \n[Science Snacks](https://www.exploratorium.edu/snacks) [물품요구서](https://docs.google.com/spreadsheets/d/1P22DDP44r_UK1PyOPlBiCP61xuDPcFhyMWLixMCDMHo/edit?gid=512152481#gid=512152481) [Drive](https://drive.google.com/drive/folders/17WMvKSY25A_fe2McTtDOagUsPhuWA8Lz)')
-    with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~기말 이후)'):
+    with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~12/14)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
       st.caption("어떤 문제에 도움이 되는 탄소 화합물 구조를 만들어 제안서를 작성함.  \n논문 자료를 종합한 후, AI에게 '이러한 문제를 해결할 수 있는 탄소화합물을 설계해줘' 식의 프롬포트 작성.  \n사전 논문을 얼마나 때려박냐에 따라 정확도, 가치 달라짐")
@@ -246,7 +250,9 @@ def show_main_page():
       st.caption('심층탐구 보고서 마감: 11/23 (월)  \n4차시 마감: 11/23(월)')
     with st.expander('**행성우주과학** | 보고서 (제출 마감: 11/22 24시)'):
       st.caption('내용: 기본 자료를 바탕으로 자율적으로 주제를 정해서 분석하는 보고서 작성.  \n주는 자료가 기본이지만 능력껏 추가 가능.  \n변별보다는 성실성을 보며, 과세특 반영  \n보고서 양식 맞춰서 10페이지 이상  \n기한 늦거나 / 어디서 베끼거나 / AI 딸깍 시 감점.  \n[Drive](https://drive.google.com/drive/folders/1_ZQgkQAgPAc4_A7OseOPocDbcISoSCB0?usp=drive_link)')    
-
+    with st.expander('**통합사회2** | 거시적 요인을 고려한 금융 의사결정(~11/23)'):
+      st.caption('*마감 일시 제보 감사합니다.')
+    
   with tabd:
     with st.expander('**대수** | 11. 사인 법칙과 코사인 법칙 ~ 16. 수학적 귀납법 + 학습지'):
       st.caption("삼각함수의 활용 학습지 끝자락에 있던 '삼각함수의 미분'과 arcsin은 미포함")

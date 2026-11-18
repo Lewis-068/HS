@@ -59,7 +59,7 @@ def show_main_page():
   
   tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['수학','물리학','화학','생명과학','지구과학','문과 과목','임시시간표'])
   
-  st.info("**[공지사항]** 기말고사 약 3주 남았습니다. 화이팅")
+  st.info("**[공지사항]** science sneck project 포스터 제출은 월요일까지이지만, 실질적인 종료 일시는 발표가 끝난 11/18일로 하겠습니다.")
   
   col_left, col_right1, col_right2 = st.columns([8,3,5])
 

@@ -298,7 +298,8 @@ def show_main_page():
           "개발자 tmi: 개발자 tmi은 주로 자습시간에(...) 작성된다.",
           "개발자 tmi: 개발자는 해당 사이트를 다른 기수 영역까지 확장할 생각이 있다.",
           "개발자 tmi: 개발자는 중학교 시절 늦잠으로 10시에 등교해본 적이 있다."
-        ]
+          "개발자 tmi: 개잘자는 perplexity, ChatGPT, gemini를 주로 사용하지만, 곧 gemini를 버리고 claude를 쓸 계획이다."
+          ]
         tmi = random.choice(tmi_list)
         st.toast(tmi)
       elif code.lower() == "blackjack":
@@ -324,6 +325,7 @@ def show_suggest_page():
 def show_nickname_page():
     st.title("자유 채팅방 닉네임 설정")
     nickname = st.session_state['nackname']
+    st.caption(f"현재 닉네임: {nickname}")
 
 
 

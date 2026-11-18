@@ -59,7 +59,7 @@ def show_main_page():
   
   tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['수학','물리학','화학','생명과학','지구과학','문과 과목','임시시간표'])
   
-  st.info("**[공지사항]** ")
+  st.info("**[공지사항]** 잘 쉬다 오시길 바랍니다.  \n사이트 업데이트는 시간상의 여유가 있을 때 '자유 채팅방'부터 진행합니다.")
   
   col_left, col_right1, col_right2 = st.columns([8,3,5])
 

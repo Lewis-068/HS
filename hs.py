@@ -59,7 +59,7 @@ def show_main_page():
   
   tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['수학','물리학','화학','생명과학','지구과학','문과 과목','임시시간표'])
   
-  st.info("**[공지사항]** 잘 쉬다 오시길 바랍니다.  \n사이트 업데이트는 시간상의 여유가 있을 때 '자유 채팅방'부터 진행합니다.")
+  st.info("**[공지사항]** 34기 학술 자료 사이트입니다.")
   
   col_left, col_right1, col_right2 = st.columns([8,3,5])
 
@@ -121,18 +121,6 @@ def show_main_page():
           subject = list[n]
           n += 1
           st.caption(f'{n}교시: {subject}')
-      with st.container(border=False):
-        st.markdown('### 11월 18일 수요일')
-        a, b, c = st.columns(3)
-        with a:
-          with st.expander('1-1 시간표'):
-            subject_time(ph, kr, ph, kr, en, en, w, x)
-        with b:
-          with st.expander('1-2 시간표'):
-            subject_time(pe, en, en, s2, ph, s1, w, x)
-        with c:
-          with st.expander('1-3 시간표'):
-            subject_time(kr, s1, kr, ph, s1, ph, w, x)
       with st.container(border=False):
         st.markdown('### 11월 23일 월요일')
         a, b, c = st.columns(3)

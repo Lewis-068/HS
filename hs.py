@@ -196,7 +196,7 @@ def show_main_page():
   taba,tabb,tabc, tabd = st.tabs(['1반 수행평가','2반 수행평가','3반 수행평가', '1학년 기말고사'])
 
   with taba:
-    with st.expander('**대수** | 논증(11/23 월요일 1교시 예상)'):
+    with st.expander('**대수** | 논증(11/25 수요일)'):
       st.caption('문항 30개 중 10개가 선별된 문항지를 랜덤으로 뽑음.')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~12/14)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
@@ -206,7 +206,7 @@ def show_main_page():
       st.caption('심층탐구 보고서 마감: 11/23 (월)  \n4차시 마감: 11/23(월)')
     
   with tabb:
-    with st.expander('**대수** | 논증(날짜 미정)'):
+    with st.expander('**대수** | 논증(11/25 수요일)'):
       st.caption('문항 30개 중 10개가 선별된 문항지를 랜덤으로 뽑음.')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~12/14)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")

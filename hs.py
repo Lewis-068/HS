@@ -241,7 +241,7 @@ def show_main_page():
     with st.expander('**공통국어2** | 교과서 3단원 ~ 5단원'):
       st.caption("-")
     with st.expander('**통합사회2** | III 시장경제와 지속가능발전 3. 금융 자산과 금융 관리 ~ V. 미래와 지속가능한 삶'):
-      st.caption("-")
+      st.caption("서술형 3문항, 객관식 20문항")
     with st.expander('**공통영어2** | 2025학년도 10월 고1 영어 모의고사 + 2026학년도 10월 고1 영어 모의고사 + 수업 프린트'):
       st.caption("-")
 

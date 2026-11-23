@@ -122,18 +122,6 @@ def show_main_page():
           n += 1
           st.caption(f'{n}교시: {subject}')
       with st.container(border=False):
-        st.markdown('### 11월 23일 월요일')
-        a, b, c = st.columns(3)
-        with a:
-          with st.expander('1-1 시간표'):
-            subject_time(m1, s2, en, s1, m2, bio, ph, bio)
-        with b:
-          with st.expander('1-2 시간표'):
-            subject_time(ast, ch, ph, ch, en, m1, m2, ch)
-        with c:
-          with st.expander('1-3 시간표'):
-            subject_time(m2, ph, ch, m1, ast, en, s1, ph)
-      with st.container(border=False):
         st.markdown('### 11월 24일 화요일')
         a, b, c = st.columns(3)
         with a:
@@ -202,8 +190,6 @@ def show_main_page():
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
       st.caption("어떤 문제에 도움이 되는 탄소 화합물 구조를 만들어 제안서를 작성함.  \n논문 자료를 종합한 후, AI에게 '이러한 문제를 해결할 수 있는 탄소화합물을 설계해줘' 식의 프롬포트 작성.  \n사전 논문을 얼마나 때려박냐에 따라 정확도, 가치 달라짐")
-    with st.expander('**생물의 유전** | 질문 노트(진행중 - 4차시)'):
-      st.caption('심층탐구 보고서 마감: 11/23 (월)  \n4차시 마감: 11/23(월)')
     
   with tabb:
     with st.expander('**대수** | 논증(11/25 수요일)'):
@@ -212,8 +198,6 @@ def show_main_page():
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
       st.caption("어떤 문제에 도움이 되는 탄소 화합물 구조를 만들어 제안서를 작성함.  \n논문 자료를 종합한 후, AI에게 '이러한 문제를 해결할 수 있는 탄소화합물을 설계해줘' 식의 프롬포트 작성.  \n사전 논문을 얼마나 때려박냐에 따라 정확도, 가치 달라짐")
-    with st.expander('**생물의 유전** | 질문 노트(진행중 - 4차시)'):
-      st.caption('심층탐구 보고서 마감: 11/23 (월)  \n4차시 마감: 11/23(월)')
     
   with tabc:
     with st.expander('**대수** | 논증(11/25 수요일)'):
@@ -222,8 +206,6 @@ def show_main_page():
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
       st.caption("어떤 문제에 도움이 되는 탄소 화합물 구조를 만들어 제안서를 작성함.  \n논문 자료를 종합한 후, AI에게 '이러한 문제를 해결할 수 있는 탄소화합물을 설계해줘' 식의 프롬포트 작성.  \n사전 논문을 얼마나 때려박냐에 따라 정확도, 가치 달라짐")
-    with st.expander('**생물의 유전** | 질문 노트(진행중 - 4차시)'):
-      st.caption('심층탐구 보고서 마감: 11/23 (월)  \n4차시 마감: 11/23(월)')
     
   with tabd:
     with st.expander('**대수** | 11. 사인 법칙과 코사인 법칙 ~ 16. 수학적 귀납법 + 학습지'):

@@ -122,18 +122,6 @@ def show_main_page():
           n += 1
           st.caption(f'{n}교시: {subject}')
       with st.container(border=False):
-        st.markdown('### 11월 25일 수요일')
-        a, b, c = st.columns(3)
-        with a:
-          with st.expander('1-1 시간표'):
-            subject_time(m2, kr, ph, ast, m1, en, ch, ch)
-        with b:
-          with st.expander('1-2 시간표'):
-            subject_time(ch, en, m1, bio, m2, ast, kr, ph)
-        with c:
-          with st.expander('1-3 시간표'):
-            subject_time(bio, ch, ch, ph, ch, m2, s2, m1)
-      with st.container(border=False):
         st.markdown('### 11월 26일 목요일')
         a, b, c = st.columns(3)
         with a:
@@ -172,28 +160,28 @@ def show_main_page():
   taba,tabb,tabc, tabd = st.tabs(['1반 수행평가','2반 수행평가','3반 수행평가', '1학년 기말고사'])
 
   with taba:
-    with st.expander('**대수** | 논증(11/25 수요일)'):
-      st.caption('문항 30개 중 10개가 선별된 문항지를 랜덤으로 뽑음.  \n정보: 1,6,12,17,21,23,27,30')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~12/14)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
       st.caption("어떤 문제에 도움이 되는 탄소 화합물 구조를 만들어 제안서를 작성함.  \n논문 자료를 종합한 후, AI에게 '이러한 문제를 해결할 수 있는 탄소화합물을 설계해줘' 식의 프롬포트 작성.  \n사전 논문을 얼마나 때려박냐에 따라 정확도, 가치 달라짐")
+    with st.expander('**체육2** | 서술형 평가'):
+      st.caption('...')
     
   with tabb:
-    with st.expander('**대수** | 논증(11/25 수요일)'):
-      st.caption('문항 30개 중 10개가 선별된 문항지를 랜덤으로 뽑음.  \n정보: 1,5,10,19,21,24,27,30')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~12/14)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
       st.caption("어떤 문제에 도움이 되는 탄소 화합물 구조를 만들어 제안서를 작성함.  \n논문 자료를 종합한 후, AI에게 '이러한 문제를 해결할 수 있는 탄소화합물을 설계해줘' 식의 프롬포트 작성.  \n사전 논문을 얼마나 때려박냐에 따라 정확도, 가치 달라짐")
+    with st.expander('**체육2** | 서술형 평가'):
+      st.caption('...')
     
   with tabc:
-    with st.expander('**대수** | 논증(11/25 수요일)'):
-      st.caption('문항 30개 중 10개가 선별된 문항지를 랜덤으로 뽑음.')
     with st.expander('**화학 반응의 세계** | 산 염기 중화 적정 보고서(~12/14)'):
       st.caption("보고서로 인한 변별은 거의 없음. 썼냐 안 썼냐 정도로 판단하나 고찰 파트는 생기부에 참고되므로 유의.")
     with st.expander('**화학 반응의 세계** | 탄소 화합물 구조 제안서(날짜 미정)'):
       st.caption("어떤 문제에 도움이 되는 탄소 화합물 구조를 만들어 제안서를 작성함.  \n논문 자료를 종합한 후, AI에게 '이러한 문제를 해결할 수 있는 탄소화합물을 설계해줘' 식의 프롬포트 작성.  \n사전 논문을 얼마나 때려박냐에 따라 정확도, 가치 달라짐")
+    with st.expander('**체육2** | 서술형 평가'):
+      st.caption('...')
     
   with tabd:
     with st.expander('**대수** | 11. 사인 법칙과 코사인 법칙 ~ 16. 수학적 귀납법 + 학습지'):

@@ -192,8 +192,8 @@ def show_main_page():
       st.caption("단, Chapter 38 상대성이론은 제외")
     with st.expander('**화학 반응의 세계** | 11. 산화 환원 ~ 15. 유기화학3'):
       st.caption("-")
-    with st.expander('**생물의 유전** | 원핵생물의 전사 조절 ~ 3. 생명공학기술'):
-      st.caption("중간 고사 범위는 포함되지 않음.")
+    with st.expander('**생물의 유전** | 원핵생물의 전사 조절(21p) ~ 3. 생명공학기술'):
+      st.caption("- 출제 경항 -  \nPPT 개념 및 예제  \n해당 범위의 올해 수능특강 생명과학2 3점 문제  \n연습문제(2)  \n객관식 13문항(50점), 서술형 6문항(50점)")
     with st.expander('**행성우주과학** | 별의 질량 ~ 우주의 거대 구조'):
       st.caption("-")
     with st.expander('**공통국어2** | 교과서 3단원 ~ 5단원'):

@@ -111,29 +111,6 @@ def show_main_page():
       st.link_button("지구과학 정리_HS", "https://docs.google.com/document/d/1YOST6DnB_4Dr_jXNPWYKQ8C2EXSWMlUK6Q9_FuhP0Gk/edit?usp=sharing", use_container_width=True)
   with tab6:
     st.caption("아직 자료가 없습니다.")
-  with tab7:
-    with st.container(border=True, height=250):
-      m1, m2, ph, ch, bio, ast, kr, s1, s2, en, pe, w, x = '대수(이도환)', '미적분I(김경민)', '전자기와 양자(송오준)', '화학반응의 세계(이병일)', '생물의 유전(김가인)', '행성우주과학(양경석)', '공통국어2(손창원)', '통합사회2(이수인)', '통합사회2(성현택)', '공통영어2(한수진)', '체육2(최현호)', '자율/창체', '.'
-      def subject_time(a,b,c,d,e,f,g,h):
-        n = 0
-        list = [a,b,c,d,e,f,g,h]
-        while n < 8:
-          subject = list[n]
-          n += 1
-          st.caption(f'{n}교시: {subject}')
-      with st.container(border=False):
-        st.markdown('### 11월 27일 금요일')
-        a, b, c = st.columns(3)
-        with a:
-          with st.expander('1-1 시간표'):
-            subject_time(w, ch, pe, m2, w, w, ch, m1)
-        with b:
-          with st.expander('1-2 시간표'):
-            subject_time(w, ph, ast, m1, w, w, ph, m2)
-        with c:
-          with st.expander('1-3 시간표'):
-            subject_time(w, kr, en, ch, w, w, ast, ch)
-        
   
   with col_left:
     st.link_button("이메일 수신 동의/미동의", "https://docs.google.com/forms/d/e/1FAIpQLScJCCfpfFsHKUqPGoQ0PcNHRv3RysKb8nrVF4jmamunX3fHOA/viewform?usp=publish-editor")
@@ -170,8 +147,8 @@ def show_main_page():
       st.caption("삼각함수의 활용 학습지 끝자락에 있던 '삼각함수의 미분'과 arcsin은 미포함")
     with st.expander('**미적분1** | 3. 함수의 미분 ~ 13. 속도 - 거리와 적분 + 학습지'):
       st.caption("정확히는 미분 전체 ~ 적분 전체 + 학습지")
-    with st.expander('**전자기와 양자** | Chapter 34 빛의 본질과 광선 광학의 원리 ~ Chapter 42 핵물리학'):
-      st.caption("단, Chapter 38 상대성이론은 제외")
+    with st.expander('**전자기와 양자** | Chapter 34 빛의 본질과 광선 광학의 원리 ~ Chapter 41 원자 물리학'):
+      st.caption("직접: 34.3~34.5, 34.7 / 35.1~35.4 / 36.1~36.5 / 37.1~37.5 / 39.1~39.8 / 40.1~40.3 / 41.1~41.3  \n간접: 34.1~34.2, 34.6 / 35.5~35.6 / 36.6")
     with st.expander('**화학 반응의 세계** | 11. 산화 환원 ~ 15. 유기화학3'):
       st.caption("-")
     with st.expander('**생물의 유전** | 원핵생물의 전사 조절(21p) ~ 3. 생명공학기술'):
@@ -183,7 +160,7 @@ def show_main_page():
     with st.expander('**통합사회2** | III 시장경제와 지속가능발전 3. 금융 자산과 금융 관리 ~ V. 미래와 지속가능한 삶'):
       st.caption("서술형 3문항, 객관식 20문항")
     with st.expander('**공통영어2** | 객관식: 모의고사 프린트 지문, 외부지문 연계 + 서술형: 수업 프린트 연계'):
-      st.caption("서술형 수업 프린트는 관계사절 작문(풀이해준 번호만), 의문문, 분사구문  \n서술형 유형은 제시된 대화문 기반으로 의문문 만들기 관계사절 및 분사구문 활용하여 작문하기 등등...")
+      st.caption("서술형 수업 프린트는 관계사절 작문(5,6,8,9,10,11,18), 의문문, 분사구문  \n서술형 유형은 제시된 대화문 기반으로 의문문 만들기 관계사절 및 분사구문 활용하여 작문하기 등등...")
 
   
   text, _, button = st.columns([2, 7, 2])

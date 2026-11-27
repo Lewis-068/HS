@@ -144,7 +144,7 @@ def show_main_page():
     
   with tabd:
     with st.expander('**대수** | 11. 사인 법칙과 코사인 법칙 ~ 16. 수학적 귀납법 + 학습지'):
-      st.caption("삼각함수의 활용 학습지 끝자락에 있던 '삼각함수의 미분'과 arcsin은 미포함")
+      st.caption("미포함: 삼각함수의 미분, 역삼각함수, 구면삼각형, 행렬 연계")
     with st.expander('**미적분1** | 3. 함수의 미분 ~ 13. 속도 - 거리와 적분 + 학습지'):
       st.caption("정확히는 미분 전체 ~ 적분 전체 + 학습지")
     with st.expander('**전자기와 양자** | Chapter 34 빛의 본질과 광선 광학의 원리 ~ Chapter 41 원자 물리학'):

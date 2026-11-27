@@ -59,7 +59,7 @@ def show_main_page():
   
   tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['수학','물리학','화학','생명과학','지구과학','문과 과목','임시시간표'])
   
-  st.info("**[D-11]**")
+  st.info("**[D-11][공지사항]** 정리 완성 순서는 화학->지구->생명")
   
   col_left, col_right1, col_right2 = st.columns([8,3,5])
 
